@@ -1,0 +1,36 @@
+@import "../abstracts/custom-variables";
+
+@font-face {
+  font-family: 'PingFang SC Regular';
+  src: url('#{$fontsUrl}PingFang-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC ExtraLight';
+  src: url('#{$fontsUrl}PingFang-ExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC Light';
+  src: url('#{$fontsUrl}PingFang-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC Medium';
+  src: url('#{$fontsUrl}PingFang-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFang SC Bold';
+  src: url('#{$fontsUrl}PingFang-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

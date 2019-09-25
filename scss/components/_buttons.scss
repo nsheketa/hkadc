@@ -1,0 +1,28 @@
+/*-------------Button-----------------*/
+.button {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 1.14rem; //16px
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-radius: 0 !important;
+  @include transition-04;
+  position: relative;
+  outline: none !important;
+  overflow: hidden;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transform: perspective(1px) translate3d(0, 0, 0);
+  transform: perspective(1px) translate3d(0, 0, 0);
+
+  &:hover,
+  &:focus,
+  &:active {
+    transform: perspective(1px) translateZ(0);
+  }
+}
+

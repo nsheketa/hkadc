@@ -1,0 +1,37 @@
+@import "abstracts/custom-variables";
+@import "abstracts/mixins";
+
+@import "vendors/bootstrap/bootstrap-grid";
+@import "vendors/normalize";
+@import "vendors/slick";
+
+@import "vendors-extensions/bootstrap-grid";
+
+@import "base/fonts";
+@import "base/custom-reset";
+
+@import "base/typography";
+@import "base/animations";
+@import "base/helpers";
+
+@import "layout/general-layout-styles";
+@import "layout/header";
+@import "layout/footer";
+
+@import "components/img-fallback";
+@import "components/carousel";
+@import "components/buttons";
+@import "components/video-bg";
+
+
+
+
+
+
+
+
+
+
+
+
+
