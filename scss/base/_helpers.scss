@@ -1,13 +1,13 @@
 .show-in-mob{
   display: block !important;
-  @include respond-to(md){
+  @include respond-min(1025){
     display: none !important;
   }
 }
 
 .hide-in-mob{
   display: none !important;
-  @include respond-to(md){
+  @include respond-min(1025){
     display: block !important;
   }
 }
