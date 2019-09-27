@@ -81,9 +81,9 @@ $rangeRed: #690000;
       background-color: $rangeRed;
     }
   }
-  &:hover{
-    &.is-active{
-      .category-range__content-dot{
+  &:hover {
+    &.is-active {
+      .category-range__content-dot {
         border: 2px solid $rangeRed;
         background-color: $rangeRed;
       }

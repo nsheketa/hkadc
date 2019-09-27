@@ -1,0 +1,21 @@
+.chart-section {
+  padding-bottom: 70px;
+}
+
+.chart-section__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chart__content {
+  width: 73%;
+  max-width: 73%;
+  padding-right: 90px;
+
+  @include respond-max(1024) {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}

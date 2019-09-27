@@ -1,11 +1,21 @@
+.categories {
+  padding-bottom: 70px;
+  margin-bottom: -115px;
+
+  @include respond-max(1024){
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+}
+
 .categories__inner {
   display: flex;
   flex-wrap: wrap;
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     padding-top: 50px;
   }
-  @include respond-max(572){
+  @include respond-max(572) {
     padding-top: 30px;
   }
 }
@@ -32,17 +42,23 @@
       width: 100%;
       max-width: 100%;
     }
+    &--sm{
+      width: 50%;
+      max-width: 50%;
+    }
+  }
+  @include respond-max(767){
+    &--sm{
+      width: 100%;
+      max-width: 100%;
+    }
   }
 }
 
-.category-body{
-
-}
-
-.category-body__heading{
+.category-body__heading {
   min-height: 75px;
   margin-bottom: 27px;
-  background: url("#{$imgUrl}categories/category-bg.png")no-repeat center /cover;
+  background: url("#{$imgUrl}categories/category-bg.png") no-repeat center /cover;
   position: relative;
   padding-bottom: 10px;
   //border: 1px solid;
@@ -57,7 +73,7 @@
     left: -10px;
     margin-top: -5px;
   }
-  &:after{
+  &:after {
     content: '';
     display: block;
     position: absolute;
@@ -68,46 +84,55 @@
     border-radius: 50%;
   }
 
-  &--red{
+  &--red {
     background: none;
   }
-  &--purple{
+  &--purple {
     color: #e223cc;
 
-    &:before, &:after{
+    &:before, &:after {
       background-color: #a0068e;
     }
-    
-    .category-body__heading-num{
+
+    .category-body__heading-num {
       color: #a0068e;
     }
   }
-  &--green{
+  &--green {
     color: #08a083;
 
-    &:before, &:after{
+    &:before, &:after {
       background-color: #0860a0;
     }
 
-    .category-body__heading-num{
+    .category-body__heading-num {
       color: #0860a0;
     }
   }
+
+  @include respond-max(1024){
+    max-width: 320px;
+    @include center;
+  }
+
+  @include respond-max(767){
+    margin-left: 0;
+  }
 }
 
-.category-body__heading-inner{
+.category-body__heading-inner {
   display: flex;
   align-items: center;
 }
 
-.category-body__heading-block{
+.category-body__heading-block {
 
-  h2{
+  h2 {
     margin-bottom: 4px;
   }
 }
 
-.category-body__heading-num{
+.category-body__heading-num {
   margin-left: auto;
   font-size: 5rem; //70px
   font-weight: 700;
@@ -117,13 +142,13 @@
   line-height: 1;
   align-self: flex-end;
 
-  @include respond-max(1280){
+  @include respond-max(1280) {
     font-size: 4rem;
   }
-  @include respond-max(1024){
+  @include respond-max(1024) {
     font-size: 3.5rem;
   }
-  @include respond-max(572){
+  @include respond-max(572) {
     font-size: 3rem;
   }
 }

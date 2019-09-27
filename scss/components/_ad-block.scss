@@ -1,0 +1,29 @@
+.ad-aside {
+  width: 27%;
+  max-width: 27%;
+
+  @include respond-max(1024){
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.ad-block__item {
+  background-color: #818181;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  @include center;
+  min-height: 100px;
+  max-width: 290px;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  p{
+    color: #fff;
+
+  }
+}

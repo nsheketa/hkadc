@@ -21,7 +21,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    min-height: 141px;
+    margin-bottom: 30px;
+    
     &--orange {
       left: auto;
       @include center;
