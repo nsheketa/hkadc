@@ -51,10 +51,65 @@ $(document).ready(function () {
     });
 
     $('.header-nav__dropdown-parent').on('click', function (e) {
-        if(isMobile()){
+        if (isMobile()) {
             $(this).find('.header-nav__dropdown').slideToggle();
         }
     });
+
+    //font size control
+    $('.header-content__font-increase').on('click', function (e) {
+        e.preventDefault();
+        var fsize = parseInt($('html').css('font-size'));
+        $(this).siblings('.header-content__font-controls').removeClass('is-inactive');
+        if (fsize >= 16) {
+            $(this).addClass('is-inactive');
+        }
+        else {
+            $('html').css({
+                fontSize: fsize + 2 + 'px'
+            });
+        }
+
+
+    });
+
+    $('.header-content__font-decrease').on('click', function (e) {
+        e.preventDefault();
+        var fsize = parseInt($('html').css('font-size'));
+        $(this).siblings('.header-content__font-controls').removeClass('is-inactive');
+        if (fsize <= 12) {
+            $(this).addClass('is-inactive');
+        }
+        else {
+            $('html').css({
+                fontSize: fsize - 2 + 'px'
+            });
+        }
+    });
+
+    //range
+
+    function rangeActiveInit(){
+        $('.category-range__item.is-active').find('.category-range__item-content').addClass('is-active');
+        $('.category-range__item.is-active').find('.category-range__item-content').addClass('is-active');
+    }
+
+    $('.category-range__item-content').on('click', function () {
+        var $this = $(this),
+            dot = $('.category-range__item-content'),
+            parent = dot.parent(),
+            dataList = $this.parent().attr('data-list'),
+            list = $('.category-event__list'),
+            parentSiblings = parent.siblings('.category-range__item');
+
+        parentSiblings.removeClass('is-active');
+        list.hide();
+        $this.parent().addClass('is-active');
+        $('.category-item__event').find('.category-event__list' + '.' + dataList).fadeIn();
+        $this.addClass('is-active');
+    });
+
+    rangeActiveInit();
 
     $(window).resize(function () {
         // headerReset();

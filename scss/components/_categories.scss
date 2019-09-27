@@ -13,7 +13,7 @@
 .category-item {
   width: 27%;
   max-width: 27%;
-  padding: 0 10px;
+  padding: 0 20px;
   position: relative;
   top: -115px;
   z-index: 1;
@@ -35,165 +35,95 @@
   }
 }
 
-.category-heading {
-  width: 230px;
+.category-body{
+
+}
+
+.category-body__heading{
+  min-height: 75px;
+  margin-bottom: 27px;
+  background: url("#{$imgUrl}categories/category-bg.png")no-repeat center /cover;
   position: relative;
-  text-align: center;
-  z-index: 2;
-  margin-bottom: 54px;
+  padding-bottom: 10px;
+  //border: 1px solid;
 
-  &--orange {
-    left: -50px;
-    @include center;
+  &:before {
+    content: '';
+    display: block;
+    width: calc(100% + 15px);
+    height: 1px;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    margin-top: -5px;
   }
-  &--purple {
-    left: -90px;
+  &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    margin-top: -9px;
+    right: -10px;
+    @include square(8px);
+    border-radius: 50%;
   }
-  &--green {
-    left: -43px;
+
+  &--red{
+    background: none;
   }
+  &--purple{
+    color: #e223cc;
 
-  @include respond-max(1024){
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &--orange {
-      left: auto;
-      @include center;
+    &:before, &:after{
+      background-color: #a0068e;
     }
-    &--purple {
-      left: auto;
-      @include center;
-    }
-    &--green {
-      left: auto;
-      @include center;
+    
+    .category-body__heading-num{
+      color: #a0068e;
     }
   }
-}
+  &--green{
+    color: #08a083;
 
-.category-heading__border {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    &:before, &:after{
+      background-color: #0860a0;
+    }
 
-  @include respond-max(1024){
-    width: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include when-inside('.category-heading--orange') {
-      margin-left: -80px;
-    }
-    @include when-inside('.category-heading--purple') {
-      margin-left: -80px;
-    }
-    @include when-inside('.category-heading--green') {
-      margin-left: -76px;
+    .category-body__heading-num{
+      color: #0860a0;
     }
   }
 }
 
-.category-heading__icon {
-  @include center;
-  margin-top: 50px;
-  margin-bottom: 12px;
-  img {
-    width: 100%;
-  }
+.category-body__heading-inner{
+  display: flex;
+  align-items: center;
+}
 
-  @include when-inside('.category-heading--orange') {
-    max-width: 110px;
-  }
-  @include when-inside('.category-heading--purple') {
-    max-width: 101px;
-  }
-  @include when-inside('.category-heading--green') {
-    max-width: 118px;
-  }
+.category-body__heading-block{
 
-  @include respond-max(1024){
-    margin-left: 12px;
-    margin-right: 0;
-    margin-top: 30px;
-
-    @include when-inside('.category-heading--orange') {
-      max-width: 90px;
-    }
-    @include when-inside('.category-heading--purple') {
-      max-width: 90px;
-    }
-    @include when-inside('.category-heading--green') {
-      max-width: 90px;
-      margin-left: 6px;
-    }
+  h2{
+    margin-bottom: 4px;
   }
 }
 
-.category-heading__content {
-  text-align: center;
+.category-body__heading-num{
+  margin-left: auto;
+  font-size: 5rem; //70px
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -4.2px;
+  font-family: $Helvetica;
+  line-height: 1;
+  align-self: flex-end;
 
-  p {
-    color: #7e7d7d;
+  @include respond-max(1280){
+    font-size: 4rem;
   }
-
-  h2 {
-    margin-bottom: 5px;
-  }
-
-  @include when-inside('.category-heading--orange') {
-    h2 {
-      color: #eea218;
-    }
-  }
-  @include when-inside('.category-heading--purple') {
-    h2 {
-      color: #8e61a6;
-    }
-  }
-  @include when-inside('.category-heading--green') {
-    h2 {
-      color: #57843d;
-    }
-  }
-
   @include respond-max(1024){
-    margin-left: 60px;
+    font-size: 3.5rem;
+  }
+  @include respond-max(572){
+    font-size: 3rem;
   }
 }
-
-//.category__icon{
-//  position: relative;
-//  width: 242px;
-//  &:after{
-//    content: '';
-//    display: block;
-//    position: absolute;
-//    top: 0;
-//    left: 0;
-//    width: 100%;
-//    height: 100%;
-//    background-color: #eee;
-//    transform-origin: right;
-//  }
-//
-//  &:hover{
-//    &:after{
-//      animation: scale 0.4s 1;
-//      animation-direction: reverse ;
-//    }
-//  }
-//}
-//
-//@keyframes scale {
-//  0%{
-//
-//    transform: scale(1,1) rotate3d(0, 0, 1, 0deg);
-//  }
-//  100%{
-//    transform: scale(0,1) rotate3d(0, 0, 1, 95deg)
-//  }
-//}

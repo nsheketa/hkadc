@@ -1,7 +1,7 @@
 //category section list
 
 .category-list {
-  padding-left: 15px;
+  padding-left: 38px;
   list-style-type: decimal-leading-zero;
 }
 
@@ -22,5 +22,15 @@
 
   @include on-event {
     color: $redColor;
+  }
+}
+
+//event category
+
+.category-event__list{
+  display: none;
+  
+  &--default{
+    display: block;
   }
 }

@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="230" height="267" viewBox="0 0 230 267"><defs><clipPath id="wn0da"><path fill="#fff" d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z"/></clipPath></defs><g><g><path fill="#fff" d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z"/><path fill="none" stroke="#5dc720" stroke-miterlimit="50" stroke-width="6" d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z" clip-path="url(&quot;#wn0da&quot;)"/></g><g><path fill="#fff" d="M19 267V139h204v128z"/></g><g><path fill="#5dc720" d="M217 151a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"/></g><g><path fill="#5dc720" d="M15 175a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-190 262.5 230 267" enable-background="new -190 262.5 230 267" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M-190,377.5c0-63.5,51.5-115,115-115S40,314,40,377.5s-51.5,115-115,115S-190,441-190,377.5z"/>
+		<g>
+			<defs>
+				<circle id="SVGID_1_" cx="-75" cy="377.5" r="115"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  overflow="visible"/>
+			</clipPath>
+			<path clip-path="url(#SVGID_2_)" fill="none" stroke="#5DC720" stroke-width="6" stroke-miterlimit="50" d="M-190,377.5
+				c0-63.5,51.5-115,115-115S40,314,40,377.5s-51.5,115-115,115S-190,441-190,377.5z"/>
+		</g>
+	</g>
+	<g>
+		<path fill="#FFFFFF" d="M-171,529.5v-128H33v128H-171z"/>
+	</g>
+	<g>
+		<path fill="#5DC720" d="M27,413.5c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6S27,416.8,27,413.5z"/>
+	</g>
+	<g>
+		<path fill="#5DC720" d="M-175,437.5c0-2.2,1.8-4,4-4s4,1.8,4,4s-1.8,4-4,4S-175,439.7-175,437.5z"/>
+	</g>
+</g>
+</svg>

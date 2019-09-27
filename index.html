@@ -36,8 +36,8 @@
                         </div>
                         <div class="header-content__top-item">
                             <span class="header-content__font-label">字體大小</span>
-                            <a href="#" class="header-content__font-increase"></a>
-                            <a href="#" class="header-content__font-decrease"></a>
+                            <a href="#" class="header-content__font-controls header-content__font-increase"></a>
+                            <a href="#" class="header-content__font-controls header-content__font-decrease"></a>
                         </div>
                         <div class="header-content__lang">
                             <div class="header-content__top-item">
@@ -111,21 +111,21 @@
     <div class="hero-banner">
         <img src="img/hero/art-01.png" alt="">
         <a href="#" class="hero-banner__caption">
-            <h2>古典音樂</h2>
+            <h2>舞蹈</h2>
             <p>立即搜尋</p>
         </a>
     </div>
     <div class="hero-banner">
         <img src="img/hero/art-02.png" alt="">
         <a href="#" class="hero-banner__caption">
-            <h2>古典音樂</h2>
+            <h2> 戲劇</h2>
             <p>立即搜尋</p>
         </a>
     </div>
     <div class="hero-banner">
         <img src="img/hero/art-03.png" alt="">
         <a href="#" class="hero-banner__caption">
-            <h2>古典音樂</h2>
+            <h2>戲曲</h2>
             <p>立即搜尋</p>
         </a>
     </div>
@@ -139,7 +139,7 @@
     <div class="hero-banner">
         <img src="img/hero/art-05.png" alt="">
         <a href="#" class="hero-banner__caption">
-            <h2>古典音樂</h2>
+            <h2>視覺藝術</h2>
             <p>立即搜尋</p>
         </a>
     </div>
@@ -151,36 +151,22 @@
 <section class="categories">
     <div class="container">
         <div class="categories__inner">
-            <div class="category-item category-item--lg">
+            <!--category item 01-->
+            <div class="category-item category-item--lg category-item__event">
                 <div class="category-heading category-heading--orange">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <svg class="category-heading__border"
-                         version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="-184 258 230 277" enable-background="new -184 258 230 277" xml:space="preserve">
-                         <g>
-                            <g>
-                               <path fill="#FFFFFF" d="M-184,373c0-63.5,51.5-115,115-115S46,309.5,46,373S-5.5,488-69,488S-184,436.5-184,373z"/>
-                            <g>
-                                <defs>
-                                    <circle id="SVGID_1_" cx="-69" cy="373" r="115"/>
-                                </defs>
-                                <clipPath id="SVGID_2_">
-                                    <use xlink:href="#SVGID_1_"  overflow="visible"/>
-                                </clipPath>
-                                <path clip-path="url(#SVGID_2_)" fill="none" stroke="#EE5218" stroke-width="6" stroke-miterlimit="50" d="M-184,373
-                                    c0-63.5,51.5-115,115-115S46,309.5,46,373S-5.5,488-69,488S-184,436.5-184,373z"/>
-                            </g>
-                            </g>
-                            <g>
-                                <path fill="#FFFFFF" d="M-136,535V407H46v128H-136z"/>
-                            </g>
-                            <g>
-                                <path fill="#EE5218" d="M34,408c0-3.3,2.7-6,6-6s6,2.7,6,6s-2.7,6-6,6S34,411.3,34,408z"/>
-                            </g>
-                            <g>
-                                <path fill="#EE5218" d="M-141,464c0-2.2,1.8-4,4-4s4,1.8,4,4s-1.8,4-4,4S-141,466.2-141,464z"/>
-                            </g>
-                         </g>
+                   <?xml version="1.0" encoding="UTF-8"?>
+                    <svg class="category-heading__border" enable-background="new -187 310 618 623" version="1.1" viewBox="-187 310 618 623" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="m-184 619c0-169 137-306 306-306s306 137 306 306-137 306-306 306-306-137.1-306-306z" fill="#fff"/>
+                                        <defs>
+                                            <circle id="b" cx="122" cy="619" r="306"/>
+                                        </defs>
+                                        <clipPath id="a">
+                                            <use overflow="visible" xlink:href="#b"/>
+                                        </clipPath>
+                                        <path d="m-184 619c0-169 137-306 306-306s306 137 306 306-137 306-306 306-306-137.1-306-306z" clip-path="url(#a)" fill="none" stroke="#EE5218" stroke-miterlimit="50" stroke-width="13"/>
+                            <path d="M-56.3,933V709.4H428V933H-56.3z" fill="#fff"/>
+                            <path d="m396.1 712c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16-16-7.1-16-16z" fill="#EE5218"/>
+                            <path d="m-69.6 861c0-5.9 4.8-10.6 10.6-10.6s10.6 4.8 10.6 10.6-4.8 10.6-10.6 10.6-10.6-4.6-10.6-10.6z" fill="#EE5218"/>
                     </svg>
                     <div class="category-heading__icon">
                         <img src="img/categories/category-01.png" alt="">
@@ -190,8 +176,152 @@
                         <p>現存紀錄: <span class="category-heading__num">53,219</span></p>
                     </div>
                 </div> <!--category heading-->
+
                 <div class="category-body">
-                    <ol class="category-list">
+                    <div class="category-body__heading category-body__heading--red">
+                        <div class="category-range">
+                            <div class="category-range__body">
+                                <span class="category-range__body-progress"></span>
+                                <span class="category-range__body-dot"></span>
+                            </div>
+                            <div class="category-range__item category-range__item-01" data-list="category-event-01">
+                                <div class="category-range__item-content">
+                                    <p class="category-range__content-active">舞蹈</p>
+                                    <span class="category-range__content-dot"></span>
+                                    <p class="category-range__content-default">舞蹈</p>
+                                </div>
+                            </div>
+                            <div class="category-range__item category-range__item-02 is-active" data-list="category-event-02">
+                                <div class="category-range__item-content">
+                                    <p class="category-range__content-active">戲劇</p>
+                                    <span class="category-range__content-dot"></span>
+                                    <p class="category-range__content-default">戲劇</p>
+                                </div>
+                            </div>
+                            <div class="category-range__item category-range__item-03" data-list="category-event-03">
+                                <div class="category-range__item-content">
+                                    <p class="category-range__content-active">戲曲</p>
+                                    <span class="category-range__content-dot"></span>
+                                    <p class="category-range__content-default">戲曲</p>
+                                </div>
+                            </div>
+                            <div class="category-range__item category-range__item-04" data-list="category-event-04">
+                                <div class="category-range__item-content">
+                                    <p class="category-range__content-active">古典音樂</p>
+                                    <span class="category-range__content-dot"></span>
+                                    <p class="category-range__content-default">古典音樂</p>
+                                </div>
+                            </div>
+                            <div class="category-range__item category-range__item-05" data-list="category-event-05">
+                                <div class="category-range__item-content">
+                                    <p class="category-range__content-active">視覺藝術</p>
+                                    <span class="category-range__content-dot"></span>
+                                    <p class="category-range__content-default">視覺藝術</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="category-list category-event__list category-event__list--default category-event-01">
+                        <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《我的50呎豪華生活》（載譽重演）</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Princess and the Pea</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">讀戲劇場——《多雲有霧，間中陽光》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Vagina Monologues</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">《你喪心．我病狂》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「Theatresports™ 勁爆劇場大比拼」亞洲公開賽2015</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
+                        </li>
+                    </ol>
+                    <ol class="category-list category-event__list category-event-02">
+                        <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《我的50呎豪華生活》（載譽重演）</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Princess and the Pea</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">讀戲劇場——《多雲有霧，間中陽光》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Vagina Monologues</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">《你喪心．我病狂》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「Theatresports™ 勁爆劇場大比拼」亞洲公開賽2015</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
+                        </li>
+                    </ol>
+                    <ol class="category-list category-event__list category-event-03">
+                        <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《我的50呎豪華生活》（載譽重演）</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Princess and the Pea</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">讀戲劇場——《多雲有霧，間中陽光》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Vagina Monologues</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">《你喪心．我病狂》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「Theatresports™ 勁爆劇場大比拼」亞洲公開賽2015</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
+                        </li>
+                    </ol>
+                    <ol class="category-list category-event__list category-event-04">
+                        <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
+                        <li class="category-list__item"><a href="#" class="category-list__link">《我的50呎豪華生活》（載譽重演）</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Princess and the Pea</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">讀戲劇場——《多雲有霧，間中陽光》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">The Vagina Monologues</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">《你喪心．我病狂》</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「Theatresports™ 勁爆劇場大比拼」亞洲公開賽2015</a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
+                        </li>
+                    </ol>
+                    <ol class="category-list category-event__list category-event-05">
                         <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                         <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                         <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -218,36 +348,31 @@
                     </ol>
                 </div>
             </div>   <!--category item-->
+            <!--category item 01-->
 
+            <!--category item 02-->
             <div class="category-item category-item--sm">
                 <div class="category-heading category-heading--purple">
                     <?xml version="1.0" encoding="utf-8"?>
-                    <svg class="category-heading__border" xmlns="http://www.w3.org/2000/svg" width="231"
-                         viewBox="0 0 231 297">
-                        <defs>
-                            <clipPath id="y6rla">
-                                <path fill="#fff"
-                                      d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z"/>
-                            </clipPath>
-                        </defs>
+                    <svg class="category-heading__border"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="-190.4 329.7 615.4 625.6" enable-background="new -190.4 329.7 615.4 625.6" xml:space="preserve">
+                        <path fill="#FFFFFF" d="M-187.4,637.4c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1
+                            S-187.4,805.6-187.4,637.4z"/>
                         <g>
-                            <g>
-                                <path fill="#fff"
-                                      d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z"/>
-                                <path fill="none" stroke="#4e1e67" stroke-miterlimit="50" stroke-width="6"
-                                      d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z"
-                                      clip-path="url(&quot;#y6rla&quot;)"/>
-                            </g>
-                            <g>
-                                <path fill="#fff" d="M0 297V169h194v128z"/>
-                            </g>
-                            <g>
-                                <path fill="#4e1e67" d="M188 196a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"/>
-                            </g>
-                            <g>
-                                <path fill="#4e1e67" d="M12 169a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/>
-                            </g>
+                            <defs>
+                                <circle id="SVGID_1_" cx="117.3" cy="637.4" r="304.7"/>
+                            </defs>
+                            <clipPath id="SVGID_2_">
+                                <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                            </clipPath>
+                            <path clip-path="url(#SVGID_2_)" fill="none" stroke="#4E1E67" stroke-width="13" stroke-miterlimit="50" d="M-187.4,637.4
+                                c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1S-187.4,805.6-187.4,637.4z"/>
                         </g>
+                        <path fill="#FFFFFF" d="M-190,955.3V780.4h514v174.9H-190z"/>
+                        <path fill="#4E1E67" d="M308.1,852c0-8.7,7.2-15.9,15.9-15.9s15.9,7.2,15.9,15.9c0,8.7-7.2,15.9-15.9,15.9S308.1,860.7,308.1,852z"
+                            />
+                        <path fill="#4E1E67" d="M-158.2,780.4c0-5.8,4.8-10.6,10.6-10.6c5.8,0,10.6,4.8,10.6,10.6s-4.8,10.6-10.6,10.6
+                            C-153.4,791-158.2,786.3-158.2,780.4z"/>
                     </svg>
                     <div class="category-heading__icon">
                         <img src="img/categories/category-02.png" alt="">
@@ -259,6 +384,15 @@
                 </div> <!--category heading-->
 
                 <div class="category-body">
+                    <div class="category-body__heading category-body__heading--purple">
+                        <div class="category-body__heading-inner">
+                            <div class="category-body__heading-block">
+                                <h2>演員</h2>
+                                <h3>最高搜尋量</h3>
+                            </div>
+                            <div class="category-body__heading-num">10</div>
+                        </div>
+                    </div>
                     <ol class="category-list">
                         <li class="category-list__item"><a href="#" class="category-list__link">梁祖堯</a></li>
                         <li class="category-list__item"><a href="#" class="category-list__link">王菀之</a></li>
@@ -273,7 +407,9 @@
                     </ol>
                 </div>
             </div>   <!--category item-->
+            <!--category item 02-->
 
+            <!--category item 03-->
             <div class="category-item category-item--sm">
                 <div class="category-heading category-heading--green">
                     <svg class="category-heading__border" xmlns="http://www.w3.org/2000/svg" width="230"
@@ -312,6 +448,15 @@
                     </div>
                 </div> <!--category heading-->
                 <div class="category-body">
+                    <div class="category-body__heading category-body__heading--green">
+                        <div class="category-body__heading-inner">
+                            <div class="category-body__heading-block">
+                                <h2>團體</h2>
+                                <h3>最高搜尋量</h3>
+                            </div>
+                            <div class="category-body__heading-num">10</div>
+                        </div>
+                    </div>
                     <ol class="category-list">
                         <li class="category-list__item"><a href="#" class="category-list__link">柏斯舞蹈學院</a></li>
                         <li class="category-list__item"><a href="#" class="category-list__link">盈風社</a></li>
@@ -326,6 +471,7 @@
                     </ol>
                 </div>
             </div>   <!--category item-->
+            <!--category item 03-->
         </div>
     </div>
 

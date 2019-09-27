@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="231" height="297" viewBox="0 0 231 297"><defs><clipPath id="y6rla"><path fill="#fff" d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z"/></clipPath></defs><g><g><path fill="#fff" d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z"/><path fill="none" stroke="#4e1e67" stroke-miterlimit="50" stroke-width="6" d="M1 115C1 51.487 52.487 0 116 0s115 51.487 115 115-51.487 115-115 115S1 178.513 1 115z" clip-path="url(&quot;#y6rla&quot;)"/></g><g><path fill="#fff" d="M0 297V169h194v128z"/></g><g><path fill="#4e1e67" d="M188 196a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"/></g><g><path fill="#4e1e67" d="M12 169a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-190.4 329.7 615.4 625.6" enable-background="new -190.4 329.7 615.4 625.6" xml:space="preserve">
+<path fill="#FFFFFF" d="M-187.4,637.4c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1
+	S-187.4,805.6-187.4,637.4z"/>
+<g>
+	<defs>
+		<circle id="SVGID_1_" cx="117.3" cy="637.4" r="304.7"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="none" stroke="#4E1E67" stroke-width="6" stroke-miterlimit="50" d="M-187.4,637.4
+		c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1S-187.4,805.6-187.4,637.4z"/>
+</g>
+<path fill="#FFFFFF" d="M-190,955.3V780.4h514v174.9H-190z"/>
+<path fill="#4E1E67" d="M308.1,852c0-8.7,7.2-15.9,15.9-15.9s15.9,7.2,15.9,15.9c0,8.7-7.2,15.9-15.9,15.9S308.1,860.7,308.1,852z"
+	/>
+<path fill="#4E1E67" d="M-158.2,780.4c0-5.8,4.8-10.6,10.6-10.6c5.8,0,10.6,4.8,10.6,10.6s-4.8,10.6-10.6,10.6
+	C-153.4,791-158.2,786.3-158.2,780.4z"/>
+</svg>

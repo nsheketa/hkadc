@@ -133,7 +133,7 @@
   margin-right: 8px;
 }
 
-.header-content__font-increase {
+.header-content__font-controls{
   display: block;
   width: 11px;
   height: 3px;
@@ -141,7 +141,20 @@
   @include transition-03;
   position: relative;
   margin: 0 8px;
+  &.is-inactive{
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
+  @include on-event {
+    background-color: $redColor;
+    &:after {
+      background-color: $redColor;
+    }
+  }
+}
+
+.header-content__font-increase {
   &:after {
     content: '';
     display: block;
@@ -154,26 +167,6 @@
     top: -4px;
     margin: auto;
     @include transition-03;
-  }
-
-  @include on-event {
-    background-color: $redColor;
-    &:after {
-      background-color: $redColor;
-    }
-  }
-}
-
-.header-content__font-decrease {
-  display: block;
-  width: 11px;
-  height: 3px;
-  background-color: $textColor;
-  @include transition-03;
-  position: relative;
-  margin: 0 8px;
-  @include on-event {
-    background-color: $redColor;
   }
 }
 
