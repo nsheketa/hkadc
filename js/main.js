@@ -50,7 +50,11 @@ $(document).ready(function () {
         $('body, html').toggleClass('no-scroll-initial');
     });
 
-
+    $('.header-nav__dropdown-parent').on('click', function (e) {
+        if(isMobile()){
+            $(this).find('.header-nav__dropdown').slideToggle();
+        }
+    });
 
     $(window).resize(function () {
         // headerReset();

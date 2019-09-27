@@ -75,7 +75,7 @@ gulp.task('webp', () =>
 
 gulp.task('imagemin', () =>
   gulp
-    .src('img/*.{jpg,png}')
+    .src('img/*/*.{jpg,png}')
     .pipe(
       imagemin(
         [
@@ -92,7 +92,7 @@ gulp.task('imagemin', () =>
         }
       )
     )
-    .pipe(gulp.dest('img/'))
+    .pipe(gulp.dest('img/*/'))
 );
 
 // Sprites

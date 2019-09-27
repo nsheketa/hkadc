@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-184 285.5 612 737.1" enable-background="new -184 285.5 612 737.1" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FFFFFF" d="M-184,591.5c0-169,137-306,306-306s306,137,306,306s-137,306-306,306S-184,760.4-184,591.5z"/>
+		<g>
+			<g>
+				<defs>
+					<circle id="SVGID_1_" cx="122" cy="591.5" r="306"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  overflow="visible"/>
+				</clipPath>
+				<path clip-path="url(#SVGID_2_)" fill="none" stroke="#EE5218" stroke-width="6" stroke-miterlimit="50" d="M-184,591.5
+					c0-169,137-306,306-306s306,137,306,306s-137,306-306,306S-184,760.4-184,591.5z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path fill="#FFFFFF" d="M-56.3,1022.5V681.9H428v340.6H-56.3z"/>
+	</g>
+	<g>
+		<path fill="#EE5218" d="M396.1,684.6c0-8.8,7.2-16,16-16s16,7.2,16,16c0,8.8-7.2,16-16,16S396.1,693.4,396.1,684.6z"/>
+	</g>
+	<g>
+		<path fill="#EE5218" d="M-69.6,833.6c0-5.9,4.8-10.6,10.6-10.6s10.6,4.8,10.6,10.6s-4.8,10.6-10.6,10.6S-69.6,839.5-69.6,833.6z"
+			/>
+	</g>
+</g>
+</svg>

@@ -2,9 +2,16 @@
   background-color: rgba(#fff, 0.85);
   padding: 18px 0 30px;
   border-bottom: 5px solid $redColor;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
   @include respond-max(1024){
     padding: 15px 0;
+    position: fixed;
+    background-color: rgba(#fff, 0.95);
 
     &.is-opened{
       .header-content{
@@ -45,9 +52,9 @@
     opacity: 0;
     z-index: -1;
     visibility: hidden;
-
-    background: #fff;
+    background: rgba(#fff,0.95);
     width: 100vw;
+    height: calc(100vh - 96px);
     margin-left: 0;
     left: 0;
     right: 0;
@@ -55,6 +62,7 @@
     padding: 15px 15px 20px;
     transform: translateX(-100%);
     border-bottom: 5px solid $redColor;
+    overflow: auto;
   }
 
   .container{
@@ -76,6 +84,7 @@
   @include respond-max(1024){
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
   }
   @include respond-max(768){
     flex-direction: column;
@@ -110,11 +119,12 @@
 
   @include respond-max(1024){
     margin-bottom: 10px;
-  }
-  @include respond-max(768){
     &:after{
       display: none;
     }
+  }
+  @include respond-max(768){
+
   }
 }
 
@@ -186,12 +196,13 @@
 
   @include respond-max(1024){
     justify-content: center;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   @include respond-max(768){
-    flex-direction: column;
-    align-items: flex-start;
+
   }
 }
 
@@ -210,7 +221,7 @@
     }
   }
 
-  @include respond-max(768){
+  @include respond-max(1024){
     margin-left: 0;
   }
 }
@@ -219,12 +230,20 @@
   position: relative;
   padding-right: 20px;
 
-  @include on-event{
-    .header-nav__dropdown {
-      opacity: 1;
-      visibility: visible;
-      z-index: 5;
+
+  @include respond-min(1024){
+    @include on-event{
+      .header-nav__dropdown {
+        opacity: 1;
+        visibility: visible;
+        z-index: 5;
+      }
     }
+  }
+
+  @include respond-max(1024){
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -257,20 +276,40 @@
   visibility: hidden;
   z-index: -1;
   @include transition-03;
-  background-color: #fff;
+  background-color: rgba(#333,0.9);
   padding: 5px;
-  text-align: center;
   width: fit-content;
-  min-width: 100%;
+  min-width: 200px;
+
+  @include respond-max(1024){
+    background-color: transparent;
+    display: none;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    z-index: 0;
+    transition: none;
+    padding-left: 20px;
+  }
 }
 
 .header-nav__dropdown-item {
   display: block;
   padding: 5px 0;
+  margin-left: -2px;
 
+  a{
+    color: #fff;
+  }
   @include on-event {
     a {
       color: $redColor;
+    }
+  }
+
+  @include respond-max(1024){
+    a{
+      color: $textColor;
     }
   }
 }
@@ -323,12 +362,22 @@
   width: 17px;
   margin-left: 10px;
   line-height: 1;
-  img {
+  img, svg {
     width: 100%;
   }
+  svg{
+    fill:#464543;
+    @include transition-03;
+  }
 
-  @include respond-max(768){
-    margin-left: 0;
+  @include on-event{
+    svg{
+      fill: $redColor;
+    }
+  }
+
+  @include respond-max(1024){
+    margin-left: auto;
   }
 }
 
@@ -336,7 +385,7 @@
 .hamburger {
   display: block;
   z-index: 1000;
-  margin-left: auto;
+  margin-left: 20px;
   @include transition-04;
   position: relative;
   border-radius: 0;

@@ -1,0 +1,26 @@
+//category section list
+
+.category-list {
+  padding-left: 15px;
+  list-style-type: decimal-leading-zero;
+}
+
+.category-list__item {
+  color: #41414c;
+  font-weight: 300;
+}
+
+.category-list__link {
+  display: block;
+  color: #41414c;
+  font-weight: 300;
+  line-height: 2.14rem; //30px
+  text-overflow: ellipsis;
+  max-width: 429px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @include on-event {
+    color: $redColor;
+  }
+}
