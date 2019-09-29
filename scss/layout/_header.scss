@@ -348,6 +348,12 @@
   }
 }
 
+.header-nav__search{
+  @include respond-min(1024){
+    display: flex !important;
+  }
+}
+
 .header__search-link {
   background-color: transparent;
   border: none !important;

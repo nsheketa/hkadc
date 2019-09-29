@@ -9,18 +9,6 @@ $rangeRed: #690000;
   display: flex;
   padding-left: 15px;
   //border: 1px solid green;
-  &:before {
-    content: '';
-    display: block;
-    height: 1px;
-    width: calc(100% - 15px);
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: $rangeGrey;
-  }
 }
 
 .category-range__body {
@@ -44,6 +32,7 @@ $rangeRed: #690000;
   z-index: 1;
   height: 100%;
   width: 0;
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
 }
 
 .category-range__body-dot {
@@ -56,6 +45,11 @@ $rangeRed: #690000;
   @include square(8px);
   border-radius: 50%;
   z-index: 1;
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+  &.is-colored{
+    border: 2px solid $rangeRed;
+    background-color: $rangeRed;
+  }
 }
 
 .category-range__item {
@@ -63,51 +57,6 @@ $rangeRed: #690000;
   max-width: 20%;
   position: relative;
   display: flex;
-
-  &.is-active {
-    .category-range__content-active {
-      transform: rotate3d(1, 0, 0, 0deg) skewX(0) translateY(0);
-      &:after, &:before {
-        opacity: 1;
-        background-color: $rangeRed
-      }
-    }
-    .category-range__content-default {
-      opacity: 0;
-      visibility: hidden;
-    }
-    .category-range__content-dot {
-      border: 2px solid $rangeRed;
-      background-color: $rangeRed;
-    }
-  }
-  &:hover {
-    &.is-active {
-      .category-range__content-dot {
-        border: 2px solid $rangeRed;
-        background-color: $rangeRed;
-      }
-    }
-  }
-}
-
-.category-range__item {
-
-  &-01 {
-
-  }
-  &-02 {
-
-  }
-  &-03 {
-
-  }
-  &-04 {
-
-  }
-  &-05 {
-
-  }
 }
 
 .category-range__item-content {
@@ -116,6 +65,11 @@ $rangeRed: #690000;
   position: relative;
   cursor: pointer;
   outline: none;
+  //border: 1px solid red;
+
+  @include ieStyles{
+    height: 75px;
+  }
 
   p {
     position: relative;
@@ -149,6 +103,20 @@ $rangeRed: #690000;
     }
   }
 
+  &.is-active {
+    .category-range__content-active {
+      transform: rotate3d(1, 0, 0, 0deg) skewX(0) translateY(0);
+      &:after, &:before {
+        opacity: 1;
+        background-color: $rangeRed
+      }
+    }
+    .category-range__content-default {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
   &:hover {
     .category-range__content-default {
       color: $rangeRed;
@@ -159,6 +127,10 @@ $rangeRed: #690000;
     }
     .category-range__content-dot {
       background-color: $rangeGrey;
+      &.is-colored{
+        border: 2px solid $rangeRed;
+        background-color: $rangeRed;
+      }
     }
   }
 
@@ -188,6 +160,11 @@ $rangeRed: #690000;
   margin: auto;
   @include transition-03;
   z-index: 1;
+
+  &.is-colored{
+    border: 2px solid $rangeRed;
+    background-color: $rangeRed;
+  }
 }
 
 .category-range__content-default {

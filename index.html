@@ -21,7 +21,7 @@
 
 <div class="is-mobile"></div>
 
-<header class="header">
+<header class="header fade-in">
     <div class="container">
         <div class="header__inner">
             <a href="index.html" class="header__logo" title="Hong Kong Arts Development Council">
@@ -73,7 +73,7 @@
                                     <a href="#" class="header-nav__link">機構</a>
                                 </div>
                             </div>
-                            <div class="header-nav__item hide-in-mob">
+                            <div class="header-nav__item hide-in-mob header-nav__search">
                                 <button type="button" title="Search Link" class="header__search-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                                         <g>
@@ -109,36 +109,51 @@
 
 <main>
     <div class="hero">
-        <div class="hero-banner">
-            <img src="img/hero/art-01.png" alt="">
+        <div class="hero-banner fade-in">
+            <div class="hero-banner__inner" data-timer="3500">
+                <div class="hero-banner__img hero-banner__img--front" style="background-image: url('img/hero/art-01.png')"></div>
+                <div class="hero-banner__img hero-banner__img--back" style="background-image: url('img/hero/art-05.png')"></div>
+            </div>
             <a href="#" class="hero-banner__caption">
                 <h2>舞蹈</h2>
                 <p>立即搜尋</p>
             </a>
         </div>
-        <div class="hero-banner">
-            <img src="img/hero/art-02.png" alt="">
+        <div class="hero-banner fade-in">
+            <div class="hero-banner__inner" data-timer="4000">
+                <div class="hero-banner__img hero-banner__img--front" style="background-image: url('img/hero/art-02.png')"></div>
+                <div class="hero-banner__img hero-banner__img--back" style="background-image: url('img/hero/art-04.png')"></div>
+            </div>
             <a href="#" class="hero-banner__caption">
                 <h2> 戲劇</h2>
                 <p>立即搜尋</p>
             </a>
         </div>
-        <div class="hero-banner">
-            <img src="img/hero/art-03.png" alt="">
+        <div class="hero-banner fade-in">
+            <div class="hero-banner__inner" data-timer="3800">
+                <div class="hero-banner__img hero-banner__img--front" style="background-image: url('img/hero/art-03.png')"></div>
+                <div class="hero-banner__img hero-banner__img--back" style="background-image: url('img/hero/art-05.png')"></div>
+            </div>
             <a href="#" class="hero-banner__caption">
                 <h2>戲曲</h2>
                 <p>立即搜尋</p>
             </a>
         </div>
-        <div class="hero-banner">
-            <img src="img/hero/art-04.png" alt="">
+        <div class="hero-banner fade-in">
+            <div class="hero-banner__inner" data-timer="4500">
+                <div class="hero-banner__img hero-banner__img--front" style="background-image: url('img/hero/art-04.png')"></div>
+                <div class="hero-banner__img hero-banner__img--back" style="background-image: url('img/hero/art-01.png')"></div>
+            </div>
             <a href="#" class="hero-banner__caption">
                 <h2>古典音樂</h2>
                 <p>立即搜尋</p>
             </a>
         </div>
-        <div class="hero-banner">
-            <img src="img/hero/art-05.png" alt="">
+        <div class="hero-banner fade-in">
+            <div class="hero-banner__inner" data-timer="4100">
+                <div class="hero-banner__img hero-banner__img--front" style="background-image: url('img/hero/art-05.png')"></div>
+                <div class="hero-banner__img hero-banner__img--back" style="background-image: url('img/hero/art-02.png')"></div>
+            </div>
             <a href="#" class="hero-banner__caption">
                 <h2>視覺藝術</h2>
                 <p>立即搜尋</p>
@@ -155,74 +170,88 @@
                 <!--category item 01-->
                 <div class="category-item category-item--lg category-item__event">
                     <div class="category-heading category-heading--orange">
-                        <?xml version="1.0" encoding="UTF-8"?>
-                        <svg class="category-heading__border" enable-background="new -187 310 618 623" version="1.1" viewBox="-187 310 618 623" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path d="m-184 619c0-169 137-306 306-306s306 137 306 306-137 306-306 306-306-137.1-306-306z" fill="#fff"/>
-                                        <defs>
-                                            <circle id="b" cx="122" cy="619" r="306"/>
-                                        </defs>
-                                        <clipPath id="a">
-                                            <use overflow="visible" xlink:href="#b"/>
-                                        </clipPath>
-                                        <path d="m-184 619c0-169 137-306 306-306s306 137 306 306-137 306-306 306-306-137.1-306-306z" clip-path="url(#a)" fill="none" stroke="#EE5218" stroke-miterlimit="50" stroke-width="13"/>
-                            <path d="M-56.3,933V709.4H428V933H-56.3z" fill="#fff"/>
-                            <path d="m396.1 712c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16-16-7.1-16-16z" fill="#EE5218"/>
-                            <path d="m-69.6 861c0-5.9 4.8-10.6 10.6-10.6s10.6 4.8 10.6 10.6-4.8 10.6-10.6 10.6-10.6-4.6-10.6-10.6z" fill="#EE5218"/>
-                    </svg>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg class="category-heading__border" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="-187 345 618 615" enable-background="new -187 345 618 615" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path fill="#FFFFFF" d="M-184,654c0-169,137-306,306-306s306,137,306,306S291,960,122,960S-184,823-184,654z"/>
+                                    <g>
+                                        <g>
+                                    <defs>
+                                        <circle id="SVGID_1_" cx="122" cy="654" r="306"/>
+                                    </defs>
+                                    <clipPath id="SVGID_2_">
+                                        <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                                    </clipPath>
+                                    <path class="category__path category__path-01" clip-path="url(#SVGID_2_)" fill="none" stroke="#EE5218" stroke-width="13" stroke-miterlimit="50" d="M-49.1,907.8
+                                        C-130.5,852.8-184,759.6-184,654c0-169,137-306,306-306s306,137,306,306c0,41-8,80.4-22.9,116"/>
+                                </g>
+                                    </g>
+                                </g>
+                                <g>
+                                    <path class="category__path-dot" fill="#EE5218" d="M388.9,763.1c0-8.8,7.2-16,16-16c8.8,0,16,7.2,16,16s-7.2,16-16,16C396.1,779.1,388.9,771.9,388.9,763.1z"
+                                        />
+                                </g>
+                                <g>
+                                    <circle fill="#EE5218" cx="-53.6" cy="898.8" r="10.6"/>
+                                </g>
+                            </g>
+                        </svg>
                         <div class="category-heading__icon">
                             <img src="img/categories/category-01.png" alt="">
                         </div>
                         <div class="category-heading__content">
                             <h2>活動</h2>
-                            <p>現存紀錄: <span class="category-heading__num">53,219</span></p>
+                            <p>現存紀錄: <span class="category-heading__num count" data-num="53">53</span><span>,219</span></p>
                         </div>
                     </div> <!--category heading-->
 
-                    <div class="category-body">
+                    <div class="category-body fade-in">
                         <div class="category-body__heading category-body__heading--red">
                             <div class="category-range">
                                 <div class="category-range__body">
                                     <span class="category-range__body-progress"></span>
                                     <span class="category-range__body-dot"></span>
                                 </div>
-                                <div class="category-range__item category-range__item-01" data-list="category-event-01">
-                                    <div class="category-range__item-content">
+                                <div class="category-range__item category-range__item-01 is-active">
+                                    <a href="#category-event-01" class="category-range__item-content" data-progress="0">
                                         <p class="category-range__content-active">舞蹈</p>
                                         <span class="category-range__content-dot"></span>
                                         <p class="category-range__content-default">舞蹈</p>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="category-range__item category-range__item-02 is-active" data-list="category-event-02">
-                                    <div class="category-range__item-content">
+                                <div class="category-range__item category-range__item-02">
+                                    <a href="#category-event-02" class="category-range__item-content" data-progress="20">
                                         <p class="category-range__content-active">戲劇</p>
                                         <span class="category-range__content-dot"></span>
                                         <p class="category-range__content-default">戲劇</p>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="category-range__item category-range__item-03" data-list="category-event-03">
-                                    <div class="category-range__item-content">
+                                <div class="category-range__item category-range__item-03">
+                                    <a href="#category-event-03" class="category-range__item-content" data-progress="40">
                                         <p class="category-range__content-active">戲曲</p>
                                         <span class="category-range__content-dot"></span>
                                         <p class="category-range__content-default">戲曲</p>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="category-range__item category-range__item-04" data-list="category-event-04">
-                                    <div class="category-range__item-content">
+                                <div class="category-range__item category-range__item-04">
+                                    <a href="#category-event-04" class="category-range__item-content" data-progress="60">
                                         <p class="category-range__content-active">古典音樂</p>
                                         <span class="category-range__content-dot"></span>
                                         <p class="category-range__content-default">古典音樂</p>
-                                    </div>
+                                    </a>
                                 </div>
-                                <div class="category-range__item category-range__item-05" data-list="category-event-05">
-                                    <div class="category-range__item-content">
+                                <div class="category-range__item category-range__item-05">
+                                    <a href="#category-event-05" class="category-range__item-content" data-progress="100">
                                         <p class="category-range__content-active">視覺藝術</p>
                                         <span class="category-range__content-dot"></span>
                                         <p class="category-range__content-default">視覺藝術</p>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <ol class="category-list category-event__list category-event__list--default category-event-01">
+                        <ol id="category-event-01" class="category-list category-event__list category-event__list--default">
                             <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -247,7 +276,7 @@
                                 <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
                             </li>
                         </ol>
-                        <ol class="category-list category-event__list category-event-02">
+                        <ol id="category-event-02" class="category-list category-event__list">
                             <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -272,7 +301,7 @@
                                 <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
                             </li>
                         </ol>
-                        <ol class="category-list category-event__list category-event-03">
+                        <ol id="category-event-03" class="category-list category-event__list">
                             <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -297,7 +326,7 @@
                                 <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
                             </li>
                         </ol>
-                        <ol class="category-list category-event__list category-event-04">
+                        <ol id="category-event-04" class="category-list category-event__list">
                             <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -322,7 +351,7 @@
                                 <a href="#" class="category-list__link">「俗物演義—80後的城市景觀」劇場・文學・跨界創作 劇。讀。演。習。—《情書的名份》及《金執港》</a>
                             </li>
                         </ol>
-                        <ol class="category-list category-event__list category-event-05">
+                        <ol id="category-event-05" class="category-list category-event__list">
                             <li class="category-list__item"><a href="#" class="category-list__link">《小丑襪友愛歷奇》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《姬絲汀．羅與她的三個好友囉》</a></li>
                             <li class="category-list__item"><a href="#" class="category-list__link">《退．優》</a></li>
@@ -355,36 +384,26 @@
                 <div class="category-item category-item--sm">
                     <div class="category-heading category-heading--purple">
                         <?xml version="1.0" encoding="utf-8"?>
-                        <svg class="category-heading__border"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="-190.4 329.7 615.4 625.6" enable-background="new -190.4 329.7 615.4 625.6" xml:space="preserve">
-                        <path fill="#FFFFFF" d="M-187.4,637.4c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1
-                            S-187.4,805.6-187.4,637.4z"/>
-                        <g>
-                            <defs>
-                                <circle id="SVGID_1_" cx="117.3" cy="637.4" r="304.7"/>
-                            </defs>
-                            <clipPath id="SVGID_2_">
-                                <use xlink:href="#SVGID_1_"  overflow="visible"/>
-                            </clipPath>
-                            <path clip-path="url(#SVGID_2_)" fill="none" stroke="#4E1E67" stroke-width="13" stroke-miterlimit="50" d="M-187.4,637.4
-                                c0-168.2,136.4-304.7,304.7-304.7S422,469.1,422,637.4S285.6,942.1,117.3,942.1S-187.4,805.6-187.4,637.4z"/>
-                        </g>
-                        <path fill="#FFFFFF" d="M-190,955.3V780.4h514v174.9H-190z"/>
-                        <path fill="#4E1E67" d="M308.1,852c0-8.7,7.2-15.9,15.9-15.9s15.9,7.2,15.9,15.9c0,8.7-7.2,15.9-15.9,15.9S308.1,860.7,308.1,852z"
-                            />
-                        <path fill="#4E1E67" d="M-158.2,780.4c0-5.8,4.8-10.6,10.6-10.6c5.8,0,10.6,4.8,10.6,10.6s-4.8,10.6-10.6,10.6
-                            C-153.4,791-158.2,786.3-158.2,780.4z"/>
-                    </svg>
+                        <svg class="category-heading__border" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="-191.2 425.6 612 564.2" enable-background="new -191.2 425.6 612 564.2" xml:space="preserve">
+                            <path fill="#FFFFFF" class="category__path category__path-02" stroke="#4E1E67" stroke-width="6" stroke-miterlimit="50" d="M-150.2,888.3c-24.2-44.5-37.9-95.6-37.9-150.1
+                                    c0-167.3,130-303.8,292.6-309.4c175-6.1,319.3,141.5,313.3,320.3c-3.1,92.4-45.8,174.4-111.4,229.1"/>
+                                <path fill="#FFFFFF" d="M-126.5,910.3c-8.4-11.4-16.1-23.5-22.9-36"/>
+                                <path class="category__path-dot" fill="#4E1E67" d="M294.6,974c0-8.7,7.2-15.8,15.8-15.8c8.7,0,15.8,7.2,15.8,15.8c0,8.7-7.2,15.8-15.8,15.8
+                                    C301.8,989.8,294.6,982.7,294.6,974z"/>
+                             <path fill="#4E1E67" d="M-145.2,897.9c-1.3,0.6-2.8,0.9-4.3,0.9c-5.8,0-10.5-4.7-10.5-10.5c0-5.8,4.8-10.5,10.5-10.5
+                                s10.5,4.8,10.5,10.5C-138.9,892.5-141.5,896.2-145.2,897.9"/>
+                        </svg>
                         <div class="category-heading__icon">
                             <img src="img/categories/category-02.png" alt="">
                         </div>
                         <div class="category-heading__content">
                             <h2>個人</h2>
-                            <p>現存紀錄: <span class="category-heading__num">12,001</span></p>
+                            <p>現存紀錄: <span class="category-heading__num count" data-num="12">12</span><span>,001</span></p>
                         </div>
                     </div> <!--category heading-->
 
-                    <div class="category-body">
+                    <div class="category-body fade-in">
                         <div class="category-body__heading category-body__heading--purple">
                             <div class="category-body__heading-inner">
                                 <div class="category-body__heading-block">
@@ -413,42 +432,27 @@
                 <!--category item 03-->
                 <div class="category-item category-item--sm">
                     <div class="category-heading category-heading--green">
-                        <svg class="category-heading__border" xmlns="http://www.w3.org/2000/svg" width="230"
-                             viewBox="0 0 230 267">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg class="category-heading__border"  enable-background="new -186.8 304.3 612 612" version="1.1" viewBox="-186.8 304.3 612 612" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
-                                <clipPath id="wn0da">
-                                    <path fill="#fff"
-                                          d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z"/>
-                                </clipPath>
+                                <path id="b" d="m-11.3 887.1c-103.7-49-175.5-154.5-175.5-276.8 0-169 137-306 306-306s306 137 306 306-137 306-306 306c-46.7 0-90.9-10.5-130.5-29.2"/>
                             </defs>
-                            <g>
-                                <g>
-                                    <path fill="#fff"
-                                          d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z"/>
-                                    <path fill="none" stroke="#5dc720" stroke-miterlimit="50" stroke-width="6"
-                                          d="M0 115C0 51.487 51.487 0 115 0s115 51.487 115 115-51.487 115-115 115S0 178.513 0 115z"
-                                          clip-path="url(&quot;#wn0da&quot;)"/>
-                                </g>
-                                <g>
-                                    <path fill="#fff" d="M19 267V139h204v128z"/>
-                                </g>
-                                <g>
-                                    <path fill="#5dc720" d="M217 151a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"/>
-                                </g>
-                                <g>
-                                    <path fill="#5dc720" d="M15 175a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/>
-                                </g>
-                            </g>
+                            <clipPath id="a">
+                                <use overflow="visible" xlink:href="#b"/>
+                            </clipPath>
+                            <path class="category__path category__path-03" d="m-136.6 778.3c-40.4-62.3-58.4-136.3-48.4-210.3 7-44 20-83 44-121 7-10 14-19 21-29 12-15 26-28 40-41 9-8 19-13 28-21 2-2 5-2 8-4l3-3 15-9c78-44 171-48 253-17 7 3 13 5 20 8 11 5 21 12 32 18 2 1 4 3 6 5 74 45 121 116 135 200 10 57 6 113-15.2 166.3" clip-path="url(#a)" fill="#fff" stroke="#5DC720" stroke-miterlimit="50" stroke-width="13"/>
+                            <path class="category__path-dot" d="m387.4 705.1c0-8.8 7.2-16 16-16s16 7.2 16 16-7.2 16-16 16c-8.8-0.1-16-7.3-16-16z" fill="#5DC720"/>
+                            <path d="m-135 778.6c-1.4 0.6-2.9 1-4.5 1-5.9 0-10.6-4.8-10.6-10.6s4.8-10.6 10.6-10.6c5.9 0 10.6 4.8 10.6 10.6 0.1 4.2-2.4 7.9-6.1 9.6" fill="#5DC720"/>
                         </svg>
                         <div class="category-heading__icon">
                             <img src="img/categories/category-03.png" alt="">
                         </div>
                         <div class="category-heading__content">
                             <h2>團體</h2>
-                            <p>現存紀錄: <span class="category-heading__num">8,321</span></p>
+                            <p>現存紀錄: <span class="category-heading__num count" data-num="8">8</span><span>,321</span></p>
                         </div>
                     </div> <!--category heading-->
-                    <div class="category-body">
+                    <div class="category-body fade-in">
                         <div class="category-body__heading category-body__heading--green">
                             <div class="category-body__heading-inner">
                                 <div class="category-body__heading-block">
@@ -480,7 +484,7 @@
     <section class="chart-section">
         <div class="container">
             <div class="chart-section__inner">
-                <div class="content chart__content">
+                <div class="content chart__content fade-in">
                     <div class="wrapper">
                         <div class="chartjs-size-monitor">
                             <div class="chartjs-size-monitor-expand">
@@ -505,13 +509,13 @@
                 </div>
                 <aside class="ad-aside">
                     <div class="ad-block">
-                        <a href="#" class="ad-block__item">
+                        <a href="#" class="ad-block__item fade-in">
                             <p>Advertisement</p>
                         </a>
-                        <a href="#" class="ad-block__item">
+                        <a href="#" class="ad-block__item fade-in">
                             <p>Advertisement</p>
                         </a>
-                        <a href="#" class="ad-block__item">
+                        <a href="#" class="ad-block__item fade-in">
                             <p>Advertisement</p>
                         </a>
                     </div>
@@ -524,7 +528,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-            <div class="footer-item">
+            <div class="footer-item fade-in">
                 <h3>關於我們</h3>
                 <ul class="footer-list">
                     <li class="footer-list__item"><a href="#" class="footer-list__link">Background and purpose</a></li>
@@ -534,7 +538,7 @@
                     <li class="footer-list__item"><a href="#" class="footer-list__link">聯絡我們</a></li>
                 </ul>
             </div>
-            <div class="footer-item">
+            <div class="footer-item fade-in">
                 <h3>年鑑專題</h3>
                 <ul class="footer-list">
                     <li class="footer-list__item"><a href="#" class="footer-list__link">舞蹈年鑑</a></li>
@@ -544,7 +548,7 @@
                     <li class="footer-list__item"><a href="#" class="footer-list__link">視覺藝術年鑑</a></li>
                 </ul>
             </div>
-            <div class="footer-item footer-contacts">
+            <div class="footer-item footer-contacts fade-in">
                 <h3>聯絡我們</h3>
                 <div class="footer-contacts__item">
                     <span class="footer-contacts__icon">
@@ -573,20 +577,37 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright fade-in">
             <p>© 2019 香港藝術發展局 版權所有   |   免責條款</p>
         </div>
     </div>
 </footer>
 
+<div class="modal modal-search">
+    <button type="button" class="modal__close">
+        <img src="img/general/icon-close.svg" alt="Close Search">
+    </button>
+    <div class="modal-search__inner">
+        <form action="#">
+            <div class="search__input-wrap">
+                <input type="search" class="search__input" autofocus>
+                <button type="submit" class="search__submit-btn">
+                    <img src="img/general/icon-search.svg" alt="Submit Search">
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/vendor/slick.min.js"></script>
-<script src="js/vendor/ofi.min.js"></script>
-<script src="js/vendor/aos.js"></script>
 <script src="js/vendor/Chart.min.js"></script>
 <script src="js/vendor/utils.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

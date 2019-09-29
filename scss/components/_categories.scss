@@ -58,7 +58,7 @@
 .category-body__heading {
   min-height: 75px;
   margin-bottom: 27px;
-  background: url("#{$imgUrl}categories/category-bg.png") no-repeat center /cover;
+  background: url("#{$imgUrl}categories/category-bg.png") no-repeat center top /cover;
   position: relative;
   padding-bottom: 10px;
   //border: 1px solid;
@@ -86,6 +86,9 @@
 
   &--red {
     background: none;
+    &:before, &:after{
+      display: none;
+    }
   }
   &--purple {
     color: #e223cc;

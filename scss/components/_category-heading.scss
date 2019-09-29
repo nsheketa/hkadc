@@ -62,6 +62,59 @@
   }
 }
 
+.category__path{
+  &-01{
+    stroke-dasharray: 1379;  //method getTotalLength()
+    stroke-dashoffset: 1379px;
+  }
+  &-02{
+    stroke-dasharray: 1391;
+    stroke-dashoffset: 1391px;
+  }
+  &-03{
+    stroke-dasharray: 1255;
+    stroke-dashoffset: 1255px;
+  }
+
+  &.is-animated{
+    animation: svgAmimate 2s linear;
+    animation-fill-mode: forwards;
+  }
+
+  @include ieStyles{
+    &-01{
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0px;
+    }
+    &-02{
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0px;
+    }
+    &-03{
+      stroke-dasharray: 0;
+      stroke-dashoffset: 0px;
+    }
+    &.is-animated{
+      animation: none;
+    }
+  }
+}
+
+@keyframes svgAmimate {
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
+.category__path-dot{
+  opacity: 0;
+  @include transition-03;
+  transition-delay: 2.1s;
+  &.is-visible{
+    opacity: 1;
+  }
+}
+
 .category-heading__icon {
   @include center;
   padding-top: 50px;

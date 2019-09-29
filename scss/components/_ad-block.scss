@@ -18,6 +18,10 @@
   min-height: 100px;
   max-width: 290px;
 
+  @include ieStyles{
+    height: 100px;
+  }
+
   &:last-of-type{
     margin-bottom: 0;
   }
