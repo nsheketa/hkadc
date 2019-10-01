@@ -111,7 +111,6 @@
 
   a {
     color: $textColor;
-    text-transform: uppercase;
     @include on-event {
       color: $redColor;
     }
@@ -123,8 +122,13 @@
       display: none;
     }
   }
-  @include respond-max(768){
+}
 
+.header-content__version{
+  display: block;
+
+  &.is-active{
+    display: none;
   }
 }
 
@@ -173,6 +177,7 @@
 .header-content__lang{
    display: flex;
    align-items: center;
+  text-transform: uppercase;
  }
 
 //end header top

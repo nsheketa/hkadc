@@ -72,21 +72,6 @@ $(document).ready(function () {
         }
     });
 
-    function textVersionInit() {
-        var img = $('body').find('img');
-        if( $('body').hasClass('text-version')){
-            $('body').find('img').attr('src', '');
-        }
-    }
-
-    $('.header-content__version').on('click', function (e) {
-        e.preventDefault();
-        $('body').toggleClass('text-version');
-        $('.header-content__version').toggleClass('is-active');
-
-        // textVersionInit();
-    });
-
     //header search
 
     function setFocus() {
@@ -150,21 +135,18 @@ $(document).ready(function () {
 
     $('.hero-banner__inner').each(function (i, el) {
         var $this = $(el),
-            timer = $this.attr('data-timer'),
-            index = 0,
-            img = $this.find('.hero-banner__img'),
-            length = img.length;
+            timer = $this.attr('data-timer');
 
         setInterval(function () {
+            var index = $this.find('.hero-banner__img').index('.is-active'),
+            img = $this.find('.hero-banner__img');
             img.removeClass('is-active');
-            if (index + 1 === length) {
-                img.eq(0).addClass('is-active');
-                index = 0;
-            }
-            else {
-                img.eq(index + 1).addClass('is-active');
-                index = index + 1;
-            }
+            img.eq(index).addClass('is-active');
+            $this.find('.hero-banner__img').toggleClass('is-animated');
+
+
+
+            console.log(index);
         }, timer)
     });
 
