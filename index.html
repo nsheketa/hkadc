@@ -602,6 +602,7 @@
 <div class="modal modal-search">
     <button type="button" class="modal__close">
         <img src="img/general/icon-close.svg" alt="Close Search">
+        <span class="img-text"></span>
     </button>
     <div class="modal-search__inner">
         <form action="#">
@@ -627,107 +628,112 @@
 </body>
 
 <script>
-    var presets = window.chartColors;
-    var utils = Samples.utils;
-    var inputs = {
-        min: 1000,
-        max: 5000,
-        count: 11,
-        decimals: 2,
-        continuity: 1
-    };
+    function chartInit() {
+        var presets = window.chartColors;
+        var utils = Samples.utils;
+        var inputs = {
+            min: 1000,
+            max: 5000,
+            count: 11,
+            decimals: 2,
+            continuity: 1
+        };
 
-    function generateData() {
-        return utils.numbers(inputs);
-    }
-
-    function generateLabels() {
-        return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"];
-    }
-
-
-    var data = {
-        labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
-        datasets: [{
-            backgroundColor: utils.transparentize(presets.red),
-            borderColor: presets.red,
-            data: [21000, 22000, 25000, 26000, 30000, 33000, 35000, 37000, 42000, 43000, 46000],
-            label: '戲劇',
-            fill: '-1'
-        }, {
-            backgroundColor: utils.transparentize(presets.orange),
-            borderColor: presets.orange,
-            data: [13800, 15000, 16000, 18000, 20000, 26000, 30000, 32000, 43000, 47000, 50000],
-            label: '舞蹈',
-            fill: '-1'
-        }, {
-            backgroundColor: utils.transparentize(presets.yellow),
-            borderColor: presets.yellow,
-            data: [5000, 6000, 8000, 9000, 14000, 22000, 23000, 28000, 31000, 32000, 40000],
-            label: '古典音樂',
-            fill: '-1'
-        }, {
-            backgroundColor: utils.transparentize(presets.green),
-            borderColor: presets.green,
-            data: [14000, 14500, 15000, 16000, 16500, 17000, 17500, 18000, 18500, 19000, 20000],
-            label: '戲曲',
-            fill: '-1'
-        }, {
-            backgroundColor: utils.transparentize(presets.blue),
-            borderColor: presets.blue,
-            data: [3000, 3100, 3800, 4800, 5400, 6800, 7800, 8000, 8800, 9700, 10000],
-            label: '視覺藝術',
-            fill: '-1'
-        }]
-    };
-
-    var options = {
-        maintainAspectRatio: false,
-        spanGaps: false,
-        elements: {
-            line: {
-                tension: 0.000001
-            }
-        },
-        scales: {
-            yAxes: [{
-                stacked: false
-            }]
-        },
-        plugins: {
-            filler: {
-                propagate: false
-            }
+        function generateData() {
+            return utils.numbers(inputs);
         }
-    };
 
-    var chart = new Chart('chart-0', {
-        type: 'line',
-        data: data,
-        options: options
-    });
+        function generateLabels() {
+            return ["2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"];
+        }
 
-    // eslint-disable-next-line no-unused-vars
-    function togglePropagate(btn) {
-        var value = btn.classList.toggle('btn-on');
-        chart.options.plugins.filler.propagate = value;
-        chart.update();
-    }
 
-    // eslint-disable-next-line no-unused-vars
-    function toggleSmooth(btn) {
-        var value = btn.classList.toggle('btn-on');
-        chart.options.elements.line.tension = value ? 0.4 : 0.000001;
-        chart.update();
-    }
+        var data = {
+            labels: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
+            datasets: [{
+                backgroundColor: utils.transparentize(presets.red),
+                borderColor: presets.red,
+                data: [21000, 22000, 25000, 26000, 30000, 33000, 35000, 37000, 42000, 43000, 46000],
+                label: '戲劇',
+                fill: '-1'
+            }, {
+                backgroundColor: utils.transparentize(presets.orange),
+                borderColor: presets.orange,
+                data: [13800, 15000, 16000, 18000, 20000, 26000, 30000, 32000, 43000, 47000, 50000],
+                label: '舞蹈',
+                fill: '-1'
+            }, {
+                backgroundColor: utils.transparentize(presets.yellow),
+                borderColor: presets.yellow,
+                data: [5000, 6000, 8000, 9000, 14000, 22000, 23000, 28000, 31000, 32000, 40000],
+                label: '古典音樂',
+                fill: '-1'
+            }, {
+                backgroundColor: utils.transparentize(presets.green),
+                borderColor: presets.green,
+                data: [14000, 14500, 15000, 16000, 16500, 17000, 17500, 18000, 18500, 19000, 20000],
+                label: '戲曲',
+                fill: '-1'
+            }, {
+                backgroundColor: utils.transparentize(presets.blue),
+                borderColor: presets.blue,
+                data: [3000, 3100, 3800, 4800, 5400, 6800, 7800, 8000, 8800, 9700, 10000],
+                label: '視覺藝術',
+                fill: '-1'
+            }]
+        };
 
-    // eslint-disable-next-line no-unused-vars
-    function randomize() {
-        chart.data.datasets.forEach(function (dataset) {
-            dataset.data = generateData();
+        var options = {
+            maintainAspectRatio: false,
+            spanGaps: false,
+            elements: {
+                line: {
+                    tension: 0.000001
+                }
+            },
+            scales: {
+                yAxes: [{
+                    stacked: false
+                }]
+            },
+            plugins: {
+                filler: {
+                    propagate: false
+                }
+            }
+        };
+
+        var chart = new Chart('chart-0', {
+            type: 'line',
+            data: data,
+            options: options
         });
-        chart.update();
+
+        // eslint-disable-next-line no-unused-vars
+        function togglePropagate(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.plugins.filler.propagate = value;
+            chart.update();
+        }
+
+        // eslint-disable-next-line no-unused-vars
+        function toggleSmooth(btn) {
+            var value = btn.classList.toggle('btn-on');
+            chart.options.elements.line.tension = value ? 0.4 : 0.000001;
+            chart.update();
+        }
+
+        // eslint-disable-next-line no-unused-vars
+        function randomize() {
+            chart.data.datasets.forEach(function (dataset) {
+                dataset.data = generateData();
+            });
+            chart.update();
+        }
     }
+
+    chartInit();
+
 </script>
 
 </html>

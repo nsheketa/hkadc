@@ -28,4 +28,12 @@ body.text-version {
   .footer-item, .footer-list__link, .footer-copyright {
     color: $textColor;
   }
+  
+  .modal__close{
+    width: auto;
+    .img-text{
+      display: block;
+      color: #fff;
+    }
+  }
 }

@@ -110,7 +110,7 @@
   }
 
   a {
-    color: $textColor;
+    color: #333;
     @include on-event {
       color: $redColor;
     }
@@ -349,6 +349,21 @@
   a{
     &:nth-of-type(2){
       margin: 0 16px;
+    }
+    &.is-active{
+      position: relative;
+      font-weight: 600;
+      &:after{
+        content: '';
+        display: block;
+        background: url("#{$imgUrl}general/nav-bg.svg")no-repeat center /contain;
+        position: absolute;
+        top: -9px;
+        right: -8px;
+        @include size(59px, 44px);
+        z-index: -1;
+      }
+
     }
   }
 }

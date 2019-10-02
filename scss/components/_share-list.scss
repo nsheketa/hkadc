@@ -1,0 +1,43 @@
+.share{
+  padding-top: 56px;
+  padding-bottom: 15px;
+}
+
+.share__inner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.share-label{
+  display: block;
+  margin-right: 25px;
+  font-size: 1.43rem;
+ }
+
+.share-list{
+  line-height: 1;
+  padding-right: 10px;
+}
+
+.share-list__item{
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.share-list__link{
+  display: block;
+  height: 17px;
+  svg{
+    width: auto;
+    height: 100%;
+    fill: #676767;
+    @include transition-03;
+  }
+
+  @include on-event{
+    svg{
+      fill: $goldColor;
+    }
+  }
+}

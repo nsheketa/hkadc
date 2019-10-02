@@ -1,0 +1,283 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Search Event</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="is-mobile"></div>
+
+<header class="header fade-in">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" title="Hong Kong Arts Development Council">
+                <img src="img/logo.svg" alt="Hong Kong Arts Development Council">
+                <span class="img-text"></span>
+            </a>
+
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-content__top">
+                        <div class="header-content__top-item">
+                            <a href="#" class="header-content__text-version header-content__version">純文字版本</a>
+                            <a href="#" class="header-content__graphic-version header-content__version is-active">Graphical Version</a>
+                        </div>
+                        <div class="header-content__top-item">
+                            <span class="header-content__font-label">字體大小</span>
+                            <a href="#" class="header-content__font-controls header-content__font-increase"></a>
+                            <a href="#" class="header-content__font-controls header-content__font-decrease"></a>
+                        </div>
+                        <div class="header-content__lang">
+                            <div class="header-content__top-item">
+                                <a href="#" class="header-content__top-lang">Eng</a>
+                            </div>
+                            <div class="header-content__top-item">
+                                <a href="#" class="header-content__top-lang">简体</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-content__bottom">
+                        <nav class="header-nav">
+                            <div class="header-nav__item header-nav__dropdown-parent">
+                                <div class="header-nav__dropdown-label">關於我們</div>
+                                <ul class="header-nav__dropdown">
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-nav__item">
+                                <a href="#" class="header-nav__link">年鑑專題</a>
+                            </div>
+                            <div class="header-nav__item">
+                                <span class="header-nav__search-label">搜尋 : </span>
+                                <div class="header-nav__search-tags">
+                                    <a href="#" class="header-nav__link is-active">活動</a>
+                                    <a href="#" class="header-nav__link">個人</a>
+                                    <a href="#" class="header-nav__link">機構</a>
+                                </div>
+                            </div>
+                            <div class="header-nav__item hide-in-mob header-nav__search">
+                                <button type="button" title="Search Link" class="header__search-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g>
+                                            <g>
+                                                <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" title="Search Link" class="header__search-link show-in-mob">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                    <g>
+                        <g>
+                            <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="hamburger show-in-mob">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="event-detail">
+        <div class="share">
+            <div class="container">
+                <div class="share__inner">
+                    <span class="share-label">分享</span>
+                    <ul class="share-list">
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                        </a></li>
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a></li>
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                                      fill-rule="evenodd" clip-rule="evenodd"/>
+                            </svg>
+                        </a></li>
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="-293 388 24 17" enable-background="new -293 390 24 14" xml:space="preserve">
+                                 <path d="M-286,396v2.4h4c-0.2,1-1.2,3-4,3c-2.4,0-4.3-2-4.3-4.4c0-2.4,1.9-4.4,4.3-4.4c1.4,0,2.3,0.6,2.8,1.1l1.9-1.8
+                                c-1.2-1.1-2.8-1.8-4.7-1.8c-3.9,0-7,3.1-7,7s3.1,7,7,7c4,0,6.7-2.8,6.7-6.8c0-0.5-0.1-0.8-0.1-1.2C-279.4,396-286,396-286,396z
+                                 M-286,396l17,2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2L-286,396z"/>
+                            </svg>
+                        </a></li>
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="event-detail__category-title">
+                <h1>現代舞／當代舞</h1>
+            </div>
+
+            <div class="event-detail__inner">
+                <div class="event-detail__main">
+                    <div class="event-detail__row">
+                        <div class="event-detail__img">
+                            <figure>
+                                <img src="img/event-search/item.png" alt="Event Detail Image">
+                                <figcaption>
+                                    圖片均由主辦單位提供／其網站下載
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="event-detail__content event-submenu">
+                            <div class="event-submenu__item">
+                                <h6>類別</h6>
+                                <p>現代舞／當代舞</p>
+                            </div>
+                            <div class="event-submenu__item">
+                                <h6>地點</h6>
+                                <p>上環文娛中心八樓</p>
+                            </div>
+                            <div class="event-submenu__item">
+                                <h6>日期</h6>
+                                <p>2017/12/15-16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-detail__aside">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-item fade-in">
+                <h3>關於我們</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Background and purpose</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">How to utilize the website</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Acknowledgement</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Glossary and Remarks</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="footer-item fade-in">
+                <h3>年鑑專題</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">舞蹈年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲劇年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲曲年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">古典音樂年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">視覺藝術年鑑</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-contacts fade-in">
+                <h3>聯絡我們</h3>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-location.svg" alt="Location">
+                    </span>
+                    <p>地址</p>
+                    <p>香港鰂魚涌英皇道1063號10樓</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-phone.svg" alt="Phone">
+                    </span>
+                    <p>電話：+852 2827 8786</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-fax.svg" alt="Fax">
+                    </span>
+                    <p>傳真：+852 2519 9301 / 2824 0585</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-mail.svg" alt="Email">
+                    </span>
+                    <p>電郵： hkadc@hkadc.org.hk</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright fade-in">
+            <p>© 2019 香港藝術發展局 版權所有 | 免責條款</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal modal-search">
+    <button type="button" class="modal__close">
+        <img src="img/general/icon-close.svg" alt="Close Search">
+        <span class="img-text"></span>
+    </button>
+    <div class="modal-search__inner">
+        <form action="#">
+            <div class="search__input-wrap">
+                <input type="search" class="search__input" autofocus>
+                <button type="submit" class="search__submit-btn">
+                    <img src="img/general/icon-search.svg" alt="Submit Search">
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/vendor/Chart.min.js"></script>
+<script src="js/vendor/utils.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
