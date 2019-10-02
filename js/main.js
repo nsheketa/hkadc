@@ -74,9 +74,19 @@ $(document).ready(function () {
 
     function textVersionInit() {
         var img = $('body').find('img');
-        if( $('body').hasClass('text-version')){
-            $('body').find('img').attr('src', '');
-        }
+
+        img.each(function (i, el) {
+            var $this = $(this),
+                alt = $this.attr('alt'),
+                sibling = $this.siblings('.img-text');
+            if ($('body').hasClass('text-version')) {
+                $this.hide();
+                sibling.text(alt);
+            } else {
+                $this.show();
+                sibling.text('');
+            }
+        })
     }
 
     $('.header-content__version').on('click', function (e) {
@@ -84,7 +94,7 @@ $(document).ready(function () {
         $('body').toggleClass('text-version');
         $('.header-content__version').toggleClass('is-active');
 
-        // textVersionInit();
+        textVersionInit();
     });
 
     //header search
