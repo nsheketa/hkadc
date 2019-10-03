@@ -2,6 +2,10 @@
   padding-top: 18px;
   padding-bottom: 32px;
   display: flex;
+
+  @include respond-max(768){
+    margin-top: 32px;
+  }
 }
 
 .event-submenu__item{
@@ -15,11 +19,15 @@
   }
   p{
     font-size: 1.14rem; //16px
+    margin-bottom: 0;
   }
 
   @include respond-max(1280){
     &:nth-of-type(2){
-      margin: 0 35px;
+      margin: 0 20px;
+    }
+    p{
+      font-size: 1rem;
     }
   }
 

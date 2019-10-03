@@ -1,0 +1,79 @@
+//general styles, header and footer
+
+body.text-version {
+
+  .header {
+    background-color: #fff;
+    border-color: $textColor;
+  }
+
+  .header-content{
+    @include respond-max(1024){
+      top: 79px;
+      height: calc(100vh - 79px);
+      border-color: $textColor;
+    }
+  }
+  .header__logo {
+    .img-text {
+      font-size: 1.14rem;
+      color: $textColor;
+    }
+  }
+
+  .header-nav__search-tags {
+    &:before, &:after {
+      display: none;
+    }
+    a.is-active{
+      &:after{
+        display: none;
+      }
+    }
+  }
+
+  .hamburger{
+    &.is-active{
+      .line{
+        background-color: $textColor;
+      }
+    }
+    @include on-event{
+      .line{
+        background-color: $textColor;
+      }
+    }
+  }
+
+  .footer {
+    background: #fff;
+    border: 1px solid $textColor;
+  }
+
+  .footer-item, .footer-list__link, .footer-copyright {
+    color: $textColor;
+  }
+
+  .footer-list__item{
+    padding-left: 0;
+    &:before{
+      display: none;
+    }
+  }
+
+  .footer-contacts__item{
+    padding-left: 0;
+  }
+
+  .footer-contacts__icon{
+    display: none;
+  }
+  
+  .modal__close{
+    width: auto;
+    .img-text{
+      display: block;
+      color: #fff;
+    }
+  }
+}

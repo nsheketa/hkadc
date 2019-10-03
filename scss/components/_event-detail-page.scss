@@ -1,6 +1,6 @@
 .event-detail{
   padding-top: 134px;
-  background: url("#{$imgUrl}event-search/bg.png")no-repeat left bottom /cover;
+  background: url("#{$imgUrl}event-search/bg.png")no-repeat left bottom /auto 80%;
 
   @include respond-max(1024){
     padding-top: 97px;
@@ -39,56 +39,126 @@
   padding-left: 83px;
   display: flex;
 
+  @include respond-max(1280){
+    padding-left: 40px;
+  }
+
+  @include respond-max(1200){
+    padding-left: 0;
+  }
+
   @include respond-max(1024){
     padding-left: 0;
+    flex-direction: column;
   }
 }
 
 .event-detail__main{
   display: flex;
+  flex-direction: column;
 }
 
-.event-detail__aside{
-  padding-left: 65px;
-
-  @include respond-max(1024){
-    padding-left: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-}
 
 .event-detail__row{
   display: flex;
+  margin-bottom: 51px;
+
+  @include respond-max(768){
+    flex-direction: column;
+  }
 }
 
-.event-detail__img{
-  max-width: 225px;
-  background: url("#{$imgUrl}event-search/img-bg.png")no-repeat center /100% 100%;
-  padding: 5px 10px;
-  position: relative;
-  top: -70px;
-  img{
-    position: relative;
-    width: 100%;
-    left: 4px;
-  }
-  figcaption{
-    position: absolute;
-    right: 0;
-    top: 100%;
-    margin-top: 10px;
-    font-size: 0.79rem; //11px
-    color: #77777e;
-  }
-  &:before{
+.event-detail__col{
 
+  &-sm{
+    max-width: 245px;
+    flex: 1 0 245px;
   }
-  &:after{
+  &-lg{
+    padding-left: 40px;
+    flex: 1 1 553px;
+  }
 
+  @include respond-max(1280){
+    &-sm{
+      max-width: 210px;
+    }
+    &-lg{
+      padding-left: 20px;
+    }
+  }
+
+  @include respond-max(768){
+    &-sm{
+      max-width: 100%;
+      flex: 1 0 auto;
+    }
+    &-lg{
+      padding-left: 0;
+      flex: 1 1 100%;
+    }
   }
 }
+
 
 .event-detail__content{
-  padding-left: 40px;
+  p{
+    font-size: 1.14rem; //16px
+    line-height: 1.86rem; //26px
+    margin-bottom: 31px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  ul{
+    margin-bottom: 31px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  @include respond-max(1280){
+    p{
+      font-size: 1rem;
+    }
+  }
 }
+
+//INTRO
+.event-detail__intro-title{
+  text-align: right;
+  padding-top: 20px;
+  h2{
+    font-size: 2.14rem; //30px
+    font-weight: 600;
+   }
+  @include respond-max(1280){
+    h2{
+      font-size: 1.79rem; //25
+    }
+  }
+  @include respond-max(1024){
+    h2{
+      font-size: 1.43rem; //20
+    }
+  }
+  @include respond-max(768){
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+//PRODUCTION
+.event-detail__production-title{
+  text-align: right;
+  h4{
+    color: $goldColor;
+    font-weight: 400;
+  }
+  @include respond-max(768){
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+

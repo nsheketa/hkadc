@@ -13,6 +13,9 @@
   display: block;
   margin-right: 25px;
   font-size: 1.43rem;
+  @include ieStyles{
+    flex: 0 0 auto;
+  }
  }
 
 .share-list{
@@ -39,5 +42,9 @@
     svg{
       fill: $goldColor;
     }
+  }
+
+  @include ieStyles{
+    max-width: 20px;
   }
 }
