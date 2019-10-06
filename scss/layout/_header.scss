@@ -7,18 +7,52 @@
   top: 0;
   left: 0;
   right: 0;
+  @include transition-04;
 
-  @include respond-max(1024){
+  &--fixed {
+    padding: 15px;
+    background-color: rgba(#fff, 1);
+    .header-content__top {
+      opacity: 0;
+      transform: translate(0, -100px);
+      position: absolute;
+    }
+    .header-content {
+      justify-content: center;
+    }
+    .header__logo {
+      width: 200px;
+    }
+  }
+
+  @include respond-max(1024) {
     padding: 15px 0;
     position: fixed;
     background-color: rgba(#fff, 0.95);
 
-    &.is-opened{
-      .header-content{
+    &--fixed{
+      background-color: rgba(#fff, 1);
+    }
+    .header-content {
+      justify-content: flex-start;
+    }
+
+    &.is-opened {
+      &.header--fixed {
+        .header-content__top {
+          opacity: 1;
+          transform: translate(0);
+          position: relative;
+        }
+      }
+      .header-content {
         opacity: 1;
         visibility: visible;
         z-index: 100;
         transform: translateX(0);
+      }
+      .header-content__top {
+        display: flex;
       }
     }
   }
@@ -26,7 +60,7 @@
 
 .header__inner {
   display: flex;
-  @include respond-max(1024){
+  @include respond-max(1024) {
     align-items: center;
   }
 }
@@ -34,11 +68,12 @@
 .header__logo {
   max-width: 270px;
   margin-right: 30px;
+  @include transition-04;
   img {
     width: 100%;
   }
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     max-width: 200px;
   }
 }
@@ -46,13 +81,15 @@
 .header-content {
   margin-left: auto;
   transition: all 0.7s ease-in-out 0s, opacity 1.5s cubic-bezier(0.5, 0, 0, 1) 0s, transform 1.5s cubic-bezier(0.5, 0, 0, 1) 0s;
+  display: flex;
+  flex-direction: column;
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     position: absolute;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
-    background: rgba(#fff,0.95);
+    background: rgba(#fff, 0.95);
     width: 100vw;
     height: calc(100vh - 96px);
     margin-left: 0;
@@ -63,10 +100,11 @@
     transform: translateX(-100%);
     border-bottom: 5px solid $redColor;
     overflow: auto;
+    justify-content: flex-start !important;
   }
 
-  .container{
-    @include respond-min(1024){
+  .container {
+    @include respond-min(1024) {
       width: auto;
       max-width: 100%;
       padding: 0;
@@ -80,13 +118,14 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: flex-end;
+  transition: 0.7s opacity ease-in-out;
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
   }
-  @include respond-max(768){
+  @include respond-max(768) {
     flex-direction: column;
   }
 }
@@ -116,18 +155,18 @@
     }
   }
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     margin-bottom: 10px;
-    &:after{
+    &:after {
       display: none;
     }
   }
 }
 
-.header-content__version{
+.header-content__version {
   display: block;
 
-  &.is-active{
+  &.is-active {
     display: none;
   }
 }
@@ -137,7 +176,7 @@
   margin-right: 8px;
 }
 
-.header-content__font-controls{
+.header-content__font-controls {
   display: block;
   width: 11px;
   height: 3px;
@@ -145,7 +184,7 @@
   @include transition-03;
   position: relative;
   margin: 0 8px;
-  &.is-inactive{
+  &.is-inactive {
     opacity: 0.5;
     pointer-events: none;
   }
@@ -174,32 +213,32 @@
   }
 }
 
-.header-content__lang{
-   display: flex;
-   align-items: center;
+.header-content__lang {
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
- }
+}
 
 //end header top
 
 //header bottom
 
 .header-content__bottom {
-
+  transition: 0.7s all ease-in-out;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     justify-content: center;
     //flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  @include respond-max(768){
+  @include respond-max(768) {
 
   }
 }
@@ -219,7 +258,7 @@
     }
   }
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     margin-left: 0;
   }
 }
@@ -228,9 +267,8 @@
   position: relative;
   padding-right: 20px;
 
-
-  @include respond-min(1024){
-    @include on-event{
+  @include respond-min(1024) {
+    @include on-event {
       .header-nav__dropdown {
         opacity: 1;
         visibility: visible;
@@ -239,7 +277,7 @@
     }
   }
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -274,12 +312,12 @@
   visibility: hidden;
   z-index: -1;
   @include transition-03;
-  background-color: rgba(#333,0.9);
+  background-color: rgba(#333, 0.9);
   padding: 5px;
   width: fit-content;
   min-width: 200px;
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     background-color: transparent;
     display: none;
     position: relative;
@@ -296,7 +334,7 @@
   padding: 5px 0;
   margin-left: -2px;
 
-  a{
+  a {
     color: #fff;
   }
   @include on-event {
@@ -305,8 +343,8 @@
     }
   }
 
-  @include respond-max(1024){
-    a{
+  @include respond-max(1024) {
+    a {
       color: $textColor;
     }
   }
@@ -346,17 +384,17 @@
     border-radius: 50%;
   }
 
-  a{
-    &:nth-of-type(2){
+  a {
+    &:nth-of-type(2) {
       margin: 0 16px;
     }
-    &.is-active{
+    &.is-active {
       position: relative;
       font-weight: 600;
-      &:after{
+      &:after {
         content: '';
         display: block;
-        background: url("#{$imgUrl}general/nav-bg.svg")no-repeat center /contain;
+        background: url("#{$imgUrl}general/nav-bg.svg") no-repeat center /contain;
         position: absolute;
         top: -9px;
         right: -8px;
@@ -368,8 +406,8 @@
   }
 }
 
-.header-nav__search{
-  @include respond-min(1024){
+.header-nav__search {
+  @include respond-min(1024) {
     display: flex !important;
   }
 }
@@ -384,18 +422,18 @@
   img, svg {
     width: 100%;
   }
-  svg{
-    fill:#464543;
+  svg {
+    fill: #464543;
     @include transition-03;
   }
 
-  @include on-event{
-    svg{
+  @include on-event {
+    svg {
       fill: $redColor;
     }
   }
 
-  @include respond-max(1024){
+  @include respond-max(1024) {
     margin-left: auto;
   }
 }
@@ -414,14 +452,14 @@
   &.is-active {
     transform: rotate(-90deg);
 
-    .line{
+    .line {
       background-color: $redColor;
     }
   }
 
   &:hover {
     cursor: pointer;
-    .line{
+    .line {
       background-color: $redColor;
     }
   }

@@ -97,6 +97,17 @@ $(document).ready(function () {
         textVersionInit();
     });
 
+    function headerScrollHandle() {
+        var header = $('.header'),
+            scrollTop = $(window).scrollTop();
+
+        if (scrollTop >= 134) {
+            header.addClass('header--fixed');
+        } else {
+            header.removeClass('header--fixed');
+        }
+    }
+
     //header search
 
     function setFocus() {
@@ -158,6 +169,26 @@ $(document).ready(function () {
 
     //hero banner animation
 
+    // $('.hero-banner__inner').each(function (i, el) {
+    //     var $this = $(el),
+    //         timer = $this.attr('data-timer'),
+    //         index = 0,
+    //         img = $this.find('.hero-banner__img'),
+    //         length = img.length;
+    //
+    //     setInterval(function () {
+    //         img.removeClass('is-active');
+    //         if (index + 1 === length) {
+    //             img.eq(0).addClass('is-active');
+    //             index = 0;
+    //         }
+    //         else {
+    //             img.eq(index + 1).addClass('is-active');
+    //             index = index + 1;
+    //         }
+    //     }, timer)
+    // });
+
     $('.hero-banner__inner').each(function (i, el) {
         var $this = $(el),
             timer = $this.attr('data-timer'),
@@ -166,16 +197,19 @@ $(document).ready(function () {
             length = img.length;
 
         setInterval(function () {
-            img.removeClass('is-active');
-            if (index + 1 === length) {
-                img.eq(0).addClass('is-active');
-                index = 0;
-            }
-            else {
-                img.eq(index + 1).addClass('is-active');
-                index = index + 1;
-            }
-        }, timer)
+            setTimeout(function () {
+                img.removeClass('is-active');
+                if (index + 1 === length) {
+                    img.eq(0).addClass('is-active');
+                    index = 0;
+                }
+                else {
+                    img.eq(index + 1).addClass('is-active');
+                    index = index + 1;
+                }
+            }, timer)
+
+        }, 5000)
     });
 
     //category item animation - number and border
@@ -268,6 +302,10 @@ $(document).ready(function () {
 
     $(window).on('orientationchange', function () {
         // headerReset();
+    });
+
+    $(window).on('scroll', function () {
+        headerScrollHandle();
     });
 
 });
