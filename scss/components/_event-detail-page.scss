@@ -50,6 +50,7 @@
   @include respond-max(1024){
     padding-left: 0;
     flex-direction: column;
+    padding-top: 31px;
   }
 }
 
@@ -100,6 +101,69 @@
   }
 }
 
+.event-detail__title{
+  margin-bottom: 31px;
+  padding-bottom: 10px;
+  position: relative;
+
+  &:before, &:after{
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #d18500;
+    z-index: -1;
+  }
+
+  &:before{
+    width: 567px;
+    height: 1px;
+    left: -221px;
+    top: 100%;
+    z-index: 0;
+  }
+  &:after{
+    @include square(6px);
+    border-radius: 50%;
+    left: 344px;
+    top: 100%;
+    margin-top: -3px;
+  }
+
+  h2{
+    font-size: 1.86rem; //26px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  @include respond-max(1280){
+    &:before{
+      width: 439px;
+      left: -148px;
+    }
+    &:after{
+      left: 287px;
+    }
+    h2{
+      font-size: 1.57rem; //22;
+    }
+  }
+  @include respond-max(1024){
+    h2{
+      font-size: 1.23rem; //18;
+    }
+  }
+
+  @include respond-max(768){
+    &:before{
+      width: 100%;
+      left: 0;
+    }
+    &:after{
+      left: 0;
+    }
+  }
+}
+
 
 .event-detail__content{
   p{
@@ -126,14 +190,16 @@
 }
 
 //INTRO
-.event-detail__intro-title{
+.event-detail__intro{
   text-align: right;
   padding-top: 20px;
+  margin-top: 53px;
   h2{
     font-size: 2.14rem; //30px
     font-weight: 600;
    }
   @include respond-max(1280){
+    margin-top: 35px;
     h2{
       font-size: 1.79rem; //25
     }

@@ -1,0 +1,142 @@
+.event-search {
+  padding: 31px 29px 41px;
+  background-color: #f2b54b;
+  border: 5px solid #eea82f;
+  overflow: hidden;
+  position: relative;
+  &:before{
+    content: '';
+    display: block;
+    height: 85px;
+    width: 85px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -47px;
+    top: -41px;
+    z-index: 2;
+  }
+  &:after{
+    content: '';
+    display: block;
+    height: 90px;
+    width: 90px;
+    background: #fff;
+    border-bottom: 5px solid #eea82f;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -47px;
+    top: -41px;
+    z-index: 1;
+  }
+  h2 {
+    color: #8b5f14;
+    margin-bottom: 13px;
+  }
+}
+
+.event-search__wrap {
+  display: flex;
+}
+
+.event-search__col {
+
+  &--lg {
+    flex: 1 0 65%;
+  }
+  &--sm {
+    flex: 1 0 35%;
+  }
+}
+
+.event-search__form-inner {
+  display: flex;
+}
+
+.event-search__subcolumn {
+  width: calc(100% - 150px);
+}
+
+.event-search__row {
+  margin: 0 -10px 20px;
+  display: flex;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.event__input-wrap {
+  padding: 0 10px;
+  position: relative;
+  &--full {
+    width: 100%;
+    max-width: 100%;
+  }
+  &--half {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+.event__input {
+  background-color: #fff;
+  border: none;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 50px;
+  height: 40px;
+  width: 100%;
+  font-size: 1.14rem;
+  color: #4e4e4e;
+  @include input-placeholder {
+    font-size: 1.14rem;
+    color: #4e4e4e;
+  }
+}
+
+.event-search__advanced {
+
+}
+
+.event-search__calendar-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  background: url("#{$imgUrl}general/icon-calendar.svg") no-repeat center /contain;
+  @include square(24px);
+}
+
+.event-search__submit-wrap {
+  padding-left: 23px;
+}
+
+.event-search__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(130px, 60px);
+  margin-bottom: 20px;
+  background-color: #575656;
+  color: #fff;
+  border-radius: 0 !important;
+  border: none;
+  box-shadow: 3px 3px 1px 0 rgba(#828282, 0.5);
+  @include transition-04;
+
+  img {
+    display: block;
+    width: 17px;
+    margin-left: 8px;
+  }
+
+  @include on-event{
+    transform: translateY(1px) perspective(1px);
+    box-shadow: -1px -1px 1px 0 rgba(#828282, 0.5);
+  }
+}

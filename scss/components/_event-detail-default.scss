@@ -1,0 +1,12 @@
+.event-detail__col-default{
+
+  .event-detail__intro-title{
+    margin-top: 11px;
+  }
+
+  @include respond-max(768){
+    .event-detail__media-main{
+      margin-bottom: 35px;
+    }
+  }
+}

@@ -1,10 +1,12 @@
 .event-submenu{
   padding-top: 18px;
   padding-bottom: 32px;
-  display: flex;
+  display: flex !important;
 
-  @include respond-max(768){
-    margin-top: 32px;
+  @include respond-max(1024){
+    &.hide-in-mob{
+      display: none !important;
+    }
   }
 }
 
