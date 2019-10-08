@@ -293,6 +293,11 @@ $(document).ready(function () {
 
     });
 
+    //Event Listing Page
+    $('.advanced-search__link').on('click', function (e) {
+        $(this).parents('.event-search__form-inner').find('.event-search__advanced').fadeToggle();
+    });
+
 
     rangeActiveInit();
 
