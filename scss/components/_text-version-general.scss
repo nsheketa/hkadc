@@ -7,8 +7,8 @@ body.text-version {
     border-color: $textColor;
   }
 
-  .header-content{
-    @include respond-max(1024){
+  .header-content {
+    @include respond-max(1024) {
       top: 79px;
       height: calc(100vh - 79px);
       border-color: $textColor;
@@ -25,21 +25,21 @@ body.text-version {
     &:before, &:after {
       display: none;
     }
-    a.is-active{
-      &:after{
+    a.is-active {
+      &:after {
         display: none;
       }
     }
   }
 
-  .hamburger{
-    &.is-active{
-      .line{
+  .hamburger {
+    &.is-active {
+      .line {
         background-color: $textColor;
       }
     }
-    @include on-event{
-      .line{
+    @include on-event {
+      .line {
         background-color: $textColor;
       }
     }
@@ -54,26 +54,41 @@ body.text-version {
     color: $textColor;
   }
 
-  .footer-list__item{
+  .footer-list__item {
     padding-left: 0;
-    &:before{
+    &:before {
       display: none;
     }
   }
 
-  .footer-contacts__item{
+  .footer-contacts__item {
     padding-left: 0;
   }
 
-  .footer-contacts__icon{
+  .footer-contacts__icon {
     display: none;
   }
-  
-  .modal__close{
+
+  .modal__close {
     width: auto;
-    .img-text{
+    .img-text {
       display: block;
       color: #fff;
     }
+  }
+
+  .pagination-list__item.is-active,
+  .pagination-list__item:focus,
+  .pagination-list__item:active,
+  .pagination-list__item:hover {
+    background: #d5d5d5;
+    color: #000;
+  }
+
+  .pagination-list__item.is-active .pagination-list__link,
+  .pagination-list__item:focus .pagination-list__link,
+  .pagination-list__item:active .pagination-list__link,
+  .pagination-list__item:hover .pagination-list__link {
+    color: #5f5f5f;
   }
 }
