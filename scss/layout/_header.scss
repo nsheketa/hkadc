@@ -84,6 +84,32 @@
   display: flex;
   flex-direction: column;
 
+  a{
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background: url("#{$imgUrl}general/nav-bg.svg") no-repeat center /contain;
+      position: absolute;
+      top: -9px;
+      right: -8px;
+      //@include size(110%, 110%);
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      z-index: -1;
+      opacity: 0;
+      visibility: hidden;
+      @include transition-04;
+    }
+    
+   &:hover, &:focus, &:active{
+     &:before{
+       opacity: 1;
+       visibility: visible;
+     }
+    }
+  }
+
   @include respond-max(1024) {
     position: absolute;
     opacity: 0;
@@ -150,9 +176,9 @@
 
   a {
     color: #333;
-    @include on-event {
-      color: $redColor;
-    }
+    //@include on-event {
+    //  color: $redColor;
+    //}
   }
 
   @include respond-max(1024) {
@@ -189,12 +215,12 @@
     pointer-events: none;
   }
 
-  @include on-event {
-    background-color: $redColor;
-    &:after {
-      background-color: $redColor;
-    }
-  }
+  //@include on-event {
+  //  background-color: $redColor;
+  //  &:after {
+  //    background-color: $redColor;
+  //  }
+  //}
 }
 
 .header-content__font-increase {
@@ -253,9 +279,9 @@
   a {
     color: $textColor;
 
-    @include on-event {
-      color: $redColor;
-    }
+    //@include on-event {
+    //  color: $redColor;
+    //}
   }
 
   @include respond-max(1024) {
@@ -337,11 +363,11 @@
   a {
     color: #fff;
   }
-  @include on-event {
-    a {
-      color: $redColor;
-    }
-  }
+  //@include on-event {
+  //  a {
+  //    color: $redColor;
+  //  }
+  //}
 
   @include respond-max(1024) {
     a {
@@ -391,17 +417,20 @@
     &.is-active {
       position: relative;
       font-weight: 600;
-      &:after {
+      &:before {
         content: '';
         display: block;
         background: url("#{$imgUrl}general/nav-bg.svg") no-repeat center /contain;
         position: absolute;
-        top: -9px;
-        right: -8px;
-        @include size(59px, 44px);
+        //top: -9px;
+        //right: -8px;
+        //@include size(59px, 44px);
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
         z-index: -1;
+        opacity: 1;
+        visibility: visible;
       }
-
     }
   }
 }

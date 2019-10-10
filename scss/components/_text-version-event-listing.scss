@@ -24,6 +24,15 @@ body.text-version{
     box-shadow: none;
   }
 
+  .advanced-search__link{
+    border: 0;
+    @include on-event{
+      &:before, &:after{
+        display: none;
+      }
+    }
+  }
+
   .event-search__tags-title{
     color: $textColor;
     border-bottom: 2px solid $textColor;

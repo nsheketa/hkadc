@@ -9,7 +9,7 @@
 
     <!--<link rel="shortcut icon" href="favicon.ico">-->
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -111,34 +111,15 @@
 
 <main>
     <section class="event-detail">
-        <div class="event-detail__intro-block show-in-mob fade-in">
+        <div class="event-detail__title show-in-mob fade-in">
             <div class="container">
-                <div class="event-detail__intro">
-                    <h2>節目簡介</h2>
-                </div>
-                <div class="event-submenu">
-                    <div class="event-submenu__item">
-                        <h6>類別</h6>
-                        <p>現代舞／當代舞</p>
-                    </div>
-                    <div class="event-submenu__item">
-                        <h6>地點</h6>
-                        <p>上環文娛中心八樓</p>
-                    </div>
-                    <div class="event-submenu__item">
-                        <h6>日期</h6>
-                        <p>2017/12/15-16</p>
-                    </div>
-                </div>
-                <div class="event-detail__title ">
-                    <h2>《八樓平台XI — 時空行旅記錄》節目二</h2>
-                </div>
+                <h2>《八樓平台XI — 時空行旅記錄》節目二</h2>
             </div>
         </div>
         <div class="share hide-in-mob">
             <div class="container">
                 <div class="share__inner fade-in">
-                    <span class="share-label">分享</span>
+                    <p class="share-label">分享</p>
                     <ul class="share-list">
                         <li class="share-list__item"><a href="#" class="share-list__link">
                             <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
@@ -162,23 +143,42 @@
                 <div class="event-detail__main">
                     <!--event detail row-->
                     <div class="event-detail__row event-detail__row-media">
-                        <div class="event-detail__col event-detail__col-default event-detail__col-sm">
+                        <div class="event-detail__col event-detail__col-sm">
                             <div class="event-detail__media-main fade-in">
-                                <!--<figure>-->
-                                <!--<img src="img/event-search/item.png" loading="lazy" alt="Event Detail Image">-->
-                                <!--<figcaption>-->
-                                <!--圖片均由主辦單位提供／其網站下載-->
-                                <!--</figcaption>-->
-                                <!--</figure>-->
+                                <figure>
+                                    <img src="img/event-search/item.png" loading="lazy" alt="Event Detail Image">
+                                </figure>
                                 <span class="img-text"></span>
                             </div>
-                            <div class="event-detail__intro hide-in-mob">
+                            <!--!!!-->
+                            <div class="event-submenu event-submenu--mob fade-in">
+                                <div class="event-submenu__item">
+                                    <h6>類別</h6>
+                                    <p>現代舞／當代舞</p>
+                                </div>
+                                <div class="event-submenu__item">
+                                    <h6>地點</h6>
+                                    <p>上環文娛中心八樓</p>
+                                </div>
+                                <div class="event-submenu__item">
+                                    <h6>日期</h6>
+                                    <p>2017/12/15-16</p>
+                                </div>
+                            </div>
+                            <!--!!!-->
+
+                            <!--!!!-->
+                            <div class="event-detail__intro event-detail__intro--desktop fade-in">
                                 <h2>節目簡介</h2>
                             </div>
+                            <!--!!!-->
+
                         </div>
                         <div class="event-detail__col event-detail__col-lg fade-in">
                             <div class="event-detail__content">
-                                <div class="event-submenu hide-in-mob">
+
+                                <!--!!!-->
+                                <div class="event-submenu event-submenu--desktop">
                                     <div class="event-submenu__item">
                                         <h6>類別</h6>
                                         <p>現代舞／當代舞</p>
@@ -192,34 +192,27 @@
                                         <p>2017/12/15-16</p>
                                     </div>
                                 </div>
+                                <!--!!!-->
+
                                 <div class="event-detail__title hide-in-mob">
                                     <h2>《八樓平台XI — 時空行旅記錄》節目二</h2>
                                 </div>
-                                <!--<div class="event-detail__content-media">-->
-                                    <!--<div class="event-detail__media-item">-->
-                                    <!--<img src="img/event-search/item.png" alt="Event Search Image">-->
-                                    <!--<span class="img-text"></span>-->
-                                    <!--</div>-->
-                                    <!--<div class="event-detail__media-item">-->
-                                    <!--<img src="img/event-search/item.png" alt="Event Search Image">-->
-                                    <!--<span class="img-text"></span>-->
-                                    <!--</div>-->
-                                    <!--<div class="event-detail__media-item">-->
-                                    <!--<img src="img/event-search/item.png" alt="Event Search Image">-->
-                                    <!--<span class="img-text"></span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                                <div class="event-detail__content">
-                                    <p>
-                                        香港舞蹈團實驗舞蹈劇場品牌「八樓平台XI」—— 12月接連兩周出走掌心數位匣子，鑽進時光流「拾」趣，「一」切從新/循環數算著，探察日常的非常步蹈。
-                                    </p>
-                                    <p>
-                                        四段舞蹈，舞者成時空旅人，用身體記錄在平行時空中真實的幻想對話，重組時光流裡的斷接風景。
-                                        【節目二】作品〈我們看見了〉在虛擬世界的旋渦中重覆的鏡像空間掏空/充塞現實的沙漏，尋覓失散的心靈。舞者巧妙舞動中國漢族舞最常用的八角巾
-                                        ，配合爵士舞及街舞的節拍，變奏出虛實交錯的空間。作品〈詭跡〉以法國存在主義大師沙特作品出發，用平行時空的概念
-                                        ，呈現兩個獨立個體在互不相干的空間裡相互感應彼此，
-                                        加上現場不斷漏水的窘況，搭配爵士樂團現場演奏，展現無常生命軌跡裡所體驗到荒謬怪誕、虛無惶惑的存在感。</p>
+                            </div>
+                            <div class="event-detail__content">
+                                <!--!!!-->
+                                <div class="event-detail__intro event-detail__intro--mob fade-in">
+                                    <h2>節目簡介</h2>
                                 </div>
+                                <!--!!!-->
+                                <p>
+                                    香港舞蹈團實驗舞蹈劇場品牌「八樓平台XI」—— 12月接連兩周出走掌心數位匣子，鑽進時光流「拾」趣，「一」切從新/循環數算著，探察日常的非常步蹈。
+                                </p>
+                                <p>
+                                    四段舞蹈，舞者成時空旅人，用身體記錄在平行時空中真實的幻想對話，重組時光流裡的斷接風景。
+                                    【節目二】作品〈我們看見了〉在虛擬世界的旋渦中重覆的鏡像空間掏空/充塞現實的沙漏，尋覓失散的心靈。舞者巧妙舞動中國漢族舞最常用的八角巾
+                                    ，配合爵士舞及街舞的節拍，變奏出虛實交錯的空間。作品〈詭跡〉以法國存在主義大師沙特作品出發，用平行時空的概念
+                                    ，呈現兩個獨立個體在互不相干的空間裡相互感應彼此，
+                                    加上現場不斷漏水的窘況，搭配爵士樂團現場演奏，展現無常生命軌跡裡所體驗到荒謬怪誕、虛無惶惑的存在感。</p>
                             </div>
                         </div>
                     </div>
@@ -356,7 +349,7 @@
             <div class="share show-in-mob">
                 <div class="container">
                     <div class="share__inner fade-in">
-                        <span class="share-label">分享</span>
+                        <p class="share-label">分享</p>
                         <ul class="share-list">
                             <li class="share-list__item"><a href="#" class="share-list__link">
                                 <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
@@ -443,7 +436,7 @@
             <div class="search__input-wrap">
                 <input type="search" class="search__input" autofocus placeholder="Search by Keywords">
                 <button type="submit" class="search__submit-btn">
-                    <img src="img/general/icon-search.svg" alt="Submit Search">
+                    <img src="img/general/icon-searc-white.svg" alt="Submit Search">
                 </button>
             </div>
         </form>

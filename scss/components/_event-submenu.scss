@@ -1,11 +1,27 @@
 .event-submenu{
   padding-top: 18px;
   padding-bottom: 32px;
-  display: flex !important;
+
+  &--desktop{
+    display: flex;
+  }
+  &--mob{
+    display: none;
+  }
 
   @include respond-max(1024){
     &.hide-in-mob{
       display: none !important;
+    }
+  }
+  @include respond-max(768){
+    &--desktop{
+      display: none;
+    }
+    &--mob{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
     }
   }
 }
@@ -34,6 +50,9 @@
   }
 
   @include respond-max(768){
-
+    margin-bottom: 10px;
+    &:nth-of-type(2){
+      margin: 0 0 10px;
+    }
   }
 }

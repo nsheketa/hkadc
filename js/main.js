@@ -169,26 +169,6 @@ $(document).ready(function () {
 
     //hero banner animation
 
-    // $('.hero-banner__inner').each(function (i, el) {
-    //     var $this = $(el),
-    //         timer = $this.attr('data-timer'),
-    //         index = 0,
-    //         img = $this.find('.hero-banner__img'),
-    //         length = img.length;
-    //
-    //     setInterval(function () {
-    //         img.removeClass('is-active');
-    //         if (index + 1 === length) {
-    //             img.eq(0).addClass('is-active');
-    //             index = 0;
-    //         }
-    //         else {
-    //             img.eq(index + 1).addClass('is-active');
-    //             index = index + 1;
-    //         }
-    //     }, timer)
-    // });
-
     $('.hero-banner__inner').each(function (i, el) {
         var $this = $(el),
             timer = $this.attr('data-timer'),
@@ -197,20 +177,40 @@ $(document).ready(function () {
             length = img.length;
 
         setInterval(function () {
-            setTimeout(function () {
-                img.removeClass('is-active');
-                if (index + 1 === length) {
-                    img.eq(0).addClass('is-active');
-                    index = 0;
-                }
-                else {
-                    img.eq(index + 1).addClass('is-active');
-                    index = index + 1;
-                }
-            }, timer)
-
-        }, 5000)
+            img.removeClass('is-active');
+            if (index + 1 === length) {
+                img.eq(0).addClass('is-active');
+                index = 0;
+            }
+            else {
+                img.eq(index + 1).addClass('is-active');
+                index = index + 1;
+            }
+        }, timer)
     });
+    //
+    // $('.hero-banner__inner').each(function (i, el) {
+    //     var $this = $(el),
+    //         timer = $this.attr('data-timer'),
+    //         index = 0,
+    //         img = $this.find('.hero-banner__img'),
+    //         length = img.length;
+    //
+    //     setInterval(function () {
+    //         setTimeout(function () {
+    //             img.removeClass('is-active');
+    //             if (index + 1 === length) {
+    //                 img.eq(0).addClass('is-active');
+    //                 index = 0;
+    //             }
+    //             else {
+    //                 img.eq(index + 1).addClass('is-active');
+    //                 index = index + 1;
+    //             }
+    //         }, timer)
+    //
+    //     }, 5000)
+    // });
 
     //category item animation - number and border
 
@@ -298,6 +298,18 @@ $(document).ready(function () {
         $(this).parents('.event-search__form-inner').find('.event-search__advanced').fadeToggle();
     });
 
+    function selectChange() {
+        $(".form__select-wrap").each(function () {
+            $(this).find("p").text($(this).find("select option:selected").text())
+        })
+    }
+
+    $(".form__select-wrap select").on('change', function () {
+        selectChange();
+    });
+
+    selectChange();
+
 
     rangeActiveInit();
 
@@ -313,7 +325,8 @@ $(document).ready(function () {
         headerScrollHandle();
     });
 
-});
+})
+;
 
 $(window).on('load', function () {
 

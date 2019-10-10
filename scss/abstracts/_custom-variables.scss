@@ -1,9 +1,11 @@
 /// Font families
 $PingFang: "PingFang SC Regular",sans-serif;
+$NotoSans: "Noto Sans T Chinese Regular",sans-serif;
 $Helvetica: "Helvetica",sans-serif;
 
 /// Base font family
-$baseFontFamily: $PingFang, "Microsoft JhengHei", STHeiti, 华文黑体, SimHei, 黑体, sans-serif;
+//$baseFontFamily: $PingFang, "Microsoft JhengHei", STHeiti, 华文黑体, SimHei, 黑体, sans-serif;
+$baseFontFamily: $NotoSans, "Microsoft JhengHei", STHeiti, 华文黑体, SimHei, 黑体, sans-serif;
 
 /// Base font size (rem), line height and letter spacing
 @mixin font-size($size: 14) {

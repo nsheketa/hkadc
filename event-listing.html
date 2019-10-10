@@ -9,7 +9,7 @@
 
     <!--<link rel="shortcut icon" href="favicon.ico">-->
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -127,7 +127,18 @@
                                         </div>
                                         <div class="event-search__row">
                                             <div class="event__input-wrap event__input-wrap--half">
-                                                <input type="text" class="event__input" placeholder="分類">
+                                                <!--<input type="text" class="event__input" placeholder="分類">-->
+                                                <div class="form__select-wrap">
+                                                    <p class="form__select-placeholder">分類</p>
+                                                    <span class="icon"></span>
+                                                    <select name="" class="form__select">
+                                                        <option value="0">分類</option>
+                                                        <option value="1">Option 01</option>
+                                                        <option value="2">Option 02</option>
+                                                        <option value="2">Option 03</option>
+                                                        <option value="2">Option 04</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="event__input-wrap event__input-wrap--half">
                                                 <input type="text" class="event__input" placeholder="Art Genre (sub cat, multi select)">
@@ -139,10 +150,32 @@
                                         <div class="event-search__advanced">
                                             <div class="event-search__row">
                                                 <div class="event__input-wrap event__input-wrap--half">
-                                                    <input type="text" class="event__input" placeholder="本地 ／ 非本地">
+                                                    <!--<input type="text" class="event__input" placeholder="本地 ／ 非本地">-->
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">本地 ／ 非本地</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">本地 ／ 非本地</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="event__input-wrap event__input-wrap--half">
-                                                    <input type="text" class="event__input" placeholder="免費 ／ 付費">
+                                                    <!--<input type="text" class="event__input" placeholder="免費 ／ 付費">-->
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">免費 ／ 付費</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">免費 ／ 付費</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="event-search__row">
@@ -150,16 +183,27 @@
                                                     <input type="text" class="event__input" placeholder="場地">
                                                 </div>
                                                 <div class="event__input-wrap event__input-wrap--half">
-                                                    <input type="text" class="event__input" placeholder="室內 ／ 戶外">
+                                                    <!--<input type="text" class="event__input" placeholder="室內 ／ 戶外">-->
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">室內 ／ 戶外</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">室內 ／ 戶外</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="event-search__row">
                                                 <div class="event__input-wrap event__input-wrap--half">
-                                                    <input type="text" class="event__input" placeholder="開始日期">
+                                                    <input type="text" class="event__input" placeholder="開始日期" id="date-from">
                                                     <span class="event-search__calendar-icon"></span>
                                                 </div>
                                                 <div class="event__input-wrap event__input-wrap--half">
-                                                    <input type="text" class="event__input" placeholder="完結日期">
+                                                    <input type="text" class="event__input" placeholder="完結日期" id="date-to">
                                                     <span class="event-search__calendar-icon"></span>
                                                 </div>
                                             </div>
@@ -168,7 +212,7 @@
                                     </div>
                                     <div class="event-search__submit-wrap">
                                         <button type="submit" class="event-search__btn">搜尋
-                                            <img src="img/general/icon-search-white.svg" alt="Search Icon">
+                                            <img src="img/general/icon-search.svg" alt="Search Icon">
                                         </button>
                                         <button type="button" class="event-search__btn">重設</button>
                                     </div>
@@ -290,7 +334,79 @@
                     </div>
                     <div class="event-results__list-item fade-in">
                         <a href="#" class="event-results__list-img">
-                            <img src="img/event-listing/no-img.png" alt="">
+                            <img src="img/general/poster.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">《海盜》</a>
+                            </h3>
+                            <p class="event-results__list-info">香港芭蕾舞團有限公司</p>
+                            <p class="event-results__list-date">2017/11/03-05, 10-12</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/event-listing/item-01.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">《八樓平台XI — 時空行旅記錄》節目二</a>
+                            </h3>
+                            <p class="event-results__list-info">香港舞蹈團，稻草人現代舞蹈團 (台灣)</p>
+                            <p class="event-results__list-date">2017/12/15-16</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/event-listing/item-02.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">城市當代舞蹈節2017 :《妮娜－祭品物質化</a>
+                            </h3>
+                            <p class="event-results__list-info">無設限舞團 (日本)</p>
+                            <p class="event-results__list-date">2017/11/24</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/event-listing/item-03.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">Battle-Or-Not Vol.1</a>
+                            </h3>
+                            <p class="event-results__list-info text-eng">Project-1on1 : Kenny Leung x Yip Chan</p>
+                            <p class="event-results__list-date">2017/11/19</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/event-listing/item-01.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">《八樓平台XI — 時空行旅記錄》節目二</a>
+                            </h3>
+                            <p class="event-results__list-info">香港舞蹈團，稻草人現代舞蹈團 (台灣)</p>
+                            <p class="event-results__list-date">2017/12/15-16</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/event-listing/item-02.png" alt="">
+                        </a>
+                        <div class="event-results__list-content">
+                            <h3 class="event-results__list-title">
+                                <a href="#">城市當代舞蹈節2017 :《妮娜－祭品物質化</a>
+                            </h3>
+                            <p class="event-results__list-info">無設限舞團 (日本)</p>
+                            <p class="event-results__list-date">2017/11/24</p>
+                        </div>
+                    </div>
+                    <div class="event-results__list-item fade-in">
+                        <a href="#" class="event-results__list-img">
+                            <img src="img/general/poster.png" alt="">
                         </a>
                         <div class="event-results__list-content">
                             <h3 class="event-results__list-title">
@@ -405,7 +521,7 @@
             <div class="search__input-wrap">
                 <input type="search" class="search__input" autofocus placeholder="Search by Keywords">
                 <button type="submit" class="search__submit-btn">
-                    <img src="img/general/icon-search.svg" alt="Submit Search">
+                    <img src="img/general/icon-search-white.svg" alt="Submit Search">
                 </button>
             </div>
         </form>
@@ -415,6 +531,7 @@
 
 <script src="js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/vendor/Chart.min.js"></script>
 <script src="js/vendor/utils.js"></script>
@@ -422,5 +539,39 @@
 <script src="js/vendor/scrollreveal.min.js"></script>
 <script src="js/main.js"></script>
 </body>
+
+<script>
+    $( function() {
+        var dateFormat = "mm/dd/yy",
+            from = $( "#date-from" )
+                .datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    numberOfMonths: 1
+                })
+                .on( "change", function() {
+                    to.datepicker( "option", "minDate", getDate( this ) );
+                }),
+            to = $( "#date-to" ).datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1
+            })
+                .on( "change", function() {
+                    from.datepicker( "option", "maxDate", getDate( this ) );
+                });
+
+        function getDate( element ) {
+            var date;
+            try {
+                date = $.datepicker.parseDate( dateFormat, element.value );
+            } catch( error ) {
+                date = null;
+            }
+
+            return date;
+        }
+    } );
+</script>
 
 </html>

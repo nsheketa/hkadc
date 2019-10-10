@@ -57,6 +57,13 @@
     padding-top: 0;
     border: none;
     border-radius: 0;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    
+    @include input-placeholder{
+      color: #fff;
+    }
   }
 }
 

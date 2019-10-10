@@ -1,0 +1,62 @@
+.ui-widget.ui-widget-content {
+  font-family: $Helvetica !important;
+  color: $textColor;
+  border-radius: 0px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  border-radius: 0;
+  background: #f2b54b;
+  border: 0;
+  padding: 3px 0;
+}
+
+.ui-icon {
+  @include square(7px);
+}
+
+.ui-widget-header .ui-icon {
+  background: none;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  border-bottom: 2px solid $textColor;
+  border-right: 2px solid $textColor;
+  margin-top: -2px;
+  margin-left: -3px;
+}
+
+.ui-datepicker .ui-datepicker-next span {
+  transform: rotate(-45deg);
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+  transform: rotate(135deg);
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: $Helvetica !important;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  border: 0;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+  border: 0px;
+  background: transparent;
+  text-align: center;
+  color: $textColor;
+}
+
+.ui-state-active, 
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active, .ui-button:active,
+.ui-button.ui-state-active:hover{
+  color: #f2b54b;
+} 
