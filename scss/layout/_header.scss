@@ -382,6 +382,10 @@
 
 .header-nav__search-label {
   font-weight: 600;
+
+  @include respond-max(1024){
+    flex: 1 0 auto;
+  }
 }
 
 .header-nav__search-tags {
@@ -431,6 +435,14 @@
         opacity: 1;
         visibility: visible;
       }
+    }
+  }
+
+  @include respond-max(1024){
+    width: 100%;
+    flex: 1 0 auto;
+    &:before, &:after{
+      display: none;
     }
   }
 }
