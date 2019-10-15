@@ -1,0 +1,103 @@
+.search__input-wrap {
+  padding: 0 10px;
+  position: relative;
+  &--full {
+    width: 100%;
+    max-width: 100%;
+  }
+  &--half {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  @include respond-max(572) {
+    &--half {
+      width: 100%;
+      max-width: 100%;
+      &:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.search__input {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 0 !important;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 50px;
+  height: 40px;
+  width: 100%;
+  font-size: 1.14rem;
+  color: #4e4e4e;
+  @include input-placeholder {
+    font-size: 1.14rem;
+    color: #4e4e4e;
+    opacity: 1;
+  }
+}
+
+.search__calendar-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  background: url("#{$imgUrl}general/icon-calendar.svg") no-repeat center /contain;
+  @include square(24px);
+}
+
+.search__submit-wrap {
+  padding-left: 23px;
+
+  @include respond-max(768) {
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include respond-max(572){
+    justify-content: space-between;
+  }
+}
+
+.search__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include size(130px, 60px);
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  color: $textColor;
+  border-radius: 0 !important;
+  border: none;
+  box-shadow: 2px 2px 1px 0 rgba(#828282, 0.4);
+  @include transition-04;
+  transform: perspective(1px) translate3d(0, 0, 0);
+
+  img {
+    display: block;
+    width: 17px;
+    margin-left: 8px;
+  }
+
+  @include on-event {
+    transform: translate(0px, 1px) perspective(1px) translate3d(0, 0, 0);
+    box-shadow: -1px -1px 1px 0 rgba(#828282, 0.26);
+  }
+
+  @include respond-max(768) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  @include respond-max(572){
+    margin-right: 0;
+    width: 48%;
+  }
+}

@@ -1,4 +1,4 @@
-.event-results__category{
+.search-results__category{
   position: absolute;
   right: 0;
   top: 48px;
@@ -15,7 +15,7 @@
   }
 }
 
-.event-results__category-row{
+.search-results__category-row{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,7 +25,7 @@
   }
 }
 
-.event-results__category-item{
+.search-results__category-item{
   color: #fff;
   display: flex;
   @include size(61px, 70px);

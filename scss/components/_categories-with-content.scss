@@ -17,25 +17,21 @@
 }
 
 .category-item {
-  width: 33.33%;
-  max-width: 33.33%;
+  width: 27%;
+  max-width: 27%;
   padding: 0 20px;
   position: relative;
   z-index: 1;
-  //&--lg {
-  //  width: 33.33%;
-  //  max-width: 33.33%;
-  //}
-  &.is-animated{
-    //.category__path-dot{
-    //  opacity: 1;
-    //}
+  &--lg {
+    width: 46%;
+    max-width: 46%;
   }
 
   @include respond-max(1024) {
     width: 100%;
     max-width: 100%;
     margin-bottom: 50px;
+    top: 0;
     &--lg {
       width: 100%;
       max-width: 100%;
@@ -46,7 +42,6 @@
     }
   }
   @include respond-max(767){
-    margin-bottom: 30px;
     &--sm{
       width: 100%;
       max-width: 100%;

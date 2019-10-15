@@ -214,14 +214,48 @@ $(document).ready(function () {
 
     //category item animation - number and border
 
-    $('.category-item').each(function (i, el) {
+    // $('.category-item').each(function (i, el) {
+    //
+    //     var $this = $(el),
+    //         count = $this.find('.count'),
+    //         path = $this.find('.category__path'),
+    //         dot = $this.find('.category__path-dot');
+    //     // length = path.get(0).getTotalLength();
+    //     // console.log(length);
+    //
+    //     new ScrollMagic.Scene({
+    //         triggerElement: el,
+    //         offset: 0,
+    //         triggerHook: 0.75,
+    //         duration: $this.height(),
+    //     })
+    //         .on('enter', function (e) {
+    //             if (!count.hasClass('increased')) {
+    //                 count.prop('Counter', 0).animate({
+    //                     Counter: count.text()
+    //                 }, {
+    //                     duration: 2000,
+    //                     easing: 'swing',
+    //                     step: function (now) {
+    //                         count.text(parseInt(now));
+    //                     }
+    //                 });
+    //                 count.addClass('increased');
+    //                 path.addClass('is-animated');
+    //                 dot.addClass('is-visible');
+    //             }
+    //         })
+    //         .addTo(controller);
+    // });
+
+    $('.category-heading').each(function (i, el) {
 
         var $this = $(el),
             count = $this.find('.count'),
             path = $this.find('.category__path'),
-            dot = $this.find('.category__path-dot');
-        // length = path.get(0).getTotalLength();
-        // console.log(length);
+            dot = $this.find('.category__path-dot'),
+            dotStart = $this.find('.path-dot__start'),
+            dotEnd = $this.find('.path-dot__end');
 
         new ScrollMagic.Scene({
             triggerElement: el,
@@ -234,18 +268,25 @@ $(document).ready(function () {
                     count.prop('Counter', 0).animate({
                         Counter: count.text()
                     }, {
-                        duration: 2000,
+                        duration: 1600,
                         easing: 'swing',
                         step: function (now) {
                             count.text(parseInt(now));
                         }
                     });
                     count.addClass('increased');
-                    path.addClass('is-animated');
-                    dot.addClass('is-visible');
                 }
             })
             .addTo(controller);
+
+        $this.on('mouseenter', function (e) {
+            path.addClass('is-animated');
+            $this.parent().addClass('is-animated');
+
+        }).on('mouseleave', function (e) {
+            path.removeClass('is-animated');
+            $this.parent().removeClass('is-animated');
+        })
     });
 
     //range
@@ -295,7 +336,7 @@ $(document).ready(function () {
 
     //Event Listing Page
     $('.advanced-search__link').on('click', function (e) {
-        $(this).parents('.event-search__form-inner').find('.event-search__advanced').fadeToggle();
+        $(this).parents('.search-form__inner').find('.search__advanced').fadeToggle();
     });
 
     function selectChange() {

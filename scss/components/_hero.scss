@@ -10,7 +10,8 @@
 .hero-banner {
   position: relative;
   flex: 1 0 20%;
-  height: calc(100vh - 125px);
+  //height: calc(100vh - 125px);
+  height: 100vh;
   min-height: 600px;
 
   @include on-event {

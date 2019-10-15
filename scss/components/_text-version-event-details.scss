@@ -20,7 +20,14 @@ body.text-version{
   .event-detail__col-lg{
     //flex: 1 0 auto;
   }
+
   .event-detail__content-media{
+    &:before, &:after{
+      display: none;
+    }
+  }
+
+  .event-detail__title{
     &:before, &:after{
       display: none;
     }

@@ -33,8 +33,7 @@
 @import "components/chart-section";
 @import "components/ad-block";
 @import "components/search-modal";
-@import "components/text-version-general";
-@import "components/text-version-homepage";
+
 @import "components/event-detail-page";
 @import "components/event-detail-row-media";
 @import "components/event-submenu";
@@ -42,16 +41,24 @@
 @import "components/event-detail-default";
 @import "components/share-list";
 @import "components/related";
-@import "components/text-version-event-details";
-@import "components/event-search";
-@import "components/event-listing-page";
-@import "components/event-search-tags";
-@import "components/event-results";
-@import "components/event-results-category";
-@import "components/event-results-list";
 
+@import "components/search-listing";
+@import "components/search-block";
+@import "components/search-form";
+@import "components/search-tags";
+@import "components/search-results-header";
+@import "components/search-results-category";
+@import "components/search-results-list";
 @import "components/pagination";
 
+@import "components/event-listing-page";
+@import "components/organization-listing-page";
+@import "components/people-listing-page";
+
+@import "components/text-version-general";
+@import "components/text-version-homepage";
+@import "components/text-version-event-details";
+@import "components/text-version-search-listing";
 @import "components/text-version-event-listing";
 
 

@@ -1,6 +1,6 @@
 
-//HEADER EVENT RESULTS
-.event-results__header{
+//HEADER SEARCH RESULTS
+.search-results__header{
   padding: 60px 232px 23px 0;
   position: relative;
   @include respond-max(1024){
@@ -10,7 +10,7 @@
   }
 }
 
-.event-results__header-info{
+.search-results__header-info{
   display: flex;
   font-size: 1.14rem;
   font-weight: 400;
@@ -25,13 +25,13 @@
   }
 }
 
-.event-results__count{
+.search-results__count{
   span{
     font-weight: 600;
   }
 }
 
-.event-results__export{
+.search-results__export{
   margin-left: auto;
   color: $textColor;
   span{

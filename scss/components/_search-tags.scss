@@ -1,4 +1,4 @@
-.event-search__tags {
+.search-tags {
   margin-top: -10px;
   padding-left: 45px;
 
@@ -8,9 +8,8 @@
   }
 }
 
-.event-search__tags-title {
+.search-tags__title {
   font-weight: 600;
-  color: #8b5f14;
   font-size: 1.29rem; //18px
   border-bottom: 2px solid #8b5f14;
   padding-bottom: 5px;
@@ -41,19 +40,19 @@
   }
 }
 
-.event-search__tag-list {
+.search-tag__list {
   margin: 0 -10px -20px;
   padding: 11px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.event-search__tag-item {
+.search-tag__item {
   padding: 0 10px;
   margin-bottom: 20px;
 }
 
-.event-search__tag-link {
+.search-tag__link {
   min-height: 40px;
   display: flex;
   align-items: center;
@@ -61,13 +60,11 @@
   color: #fff;
   font-size: 1.14rem; //16px
   font-weight: 400;
-  background-color: #d8a244;
   border-radius: 8px;
-  min-width: 100px;
   transform: perspective(1px) translate3d(0,0,0);
 
   @include on-event {
-    background-color: rgba(#d8a244, 0.63);
+    //background-color: rgba(#d8a244, 0.63);
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25);
     transform: translate(1px, 1px);
   }

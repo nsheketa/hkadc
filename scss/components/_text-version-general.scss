@@ -8,12 +8,19 @@ body.text-version {
   }
 
   .header-content {
+
+    a {
+      &:before {
+        display: none;
+      }
+    }
     @include respond-max(1024) {
       top: 79px;
       height: calc(100vh - 79px);
       border-color: $textColor;
     }
   }
+
   .header__logo {
     .img-text {
       font-size: 1.14rem;
@@ -26,7 +33,7 @@ body.text-version {
       display: none;
     }
     a.is-active {
-      &:after {
+      &:after, &:before {
         display: none;
       }
     }
@@ -92,11 +99,11 @@ body.text-version {
     color: #5f5f5f;
   }
 
-  .form__select-wrap p{
+  .form__select-wrap p {
     border: 1px solid $textColor;
   }
 
-  .ui-datepicker .ui-datepicker-header{
+  .ui-datepicker .ui-datepicker-header {
     background: transparent;
   }
 }

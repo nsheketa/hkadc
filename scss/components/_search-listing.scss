@@ -1,0 +1,13 @@
+.search-listing{
+  padding-top: 170px;
+  padding-bottom: 100px;
+
+  @include respond-max(768){
+    padding-top: 120px;
+    padding-bottom: 50px;
+  }
+}
+
+.search-listing__inner{
+  background: url("#{$imgUrl}event-listing/bg.png")no-repeat center /auto 70%;
+}

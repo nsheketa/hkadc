@@ -1,0 +1,62 @@
+.organization__search-block {
+  border: 5px solid #94c378;
+  background-color: #aed199;
+  &:before {
+    border-bottom: 5px solid #94c378;
+  }
+
+  h2 {
+    color: #669a48;
+  }
+
+  .search-tags__title {
+    color: #669a48;
+    border-color: #690000;
+    &:before {
+      background-color: #690000;
+    }
+
+    &:after {
+      background-color: #690000;
+    }
+  }
+
+  .search-tag__link {
+    background-color: #83c366;
+    @include on-event {
+      background-color: rgba(#83c366, 0.63);
+    }
+  }
+}
+
+.organization-search__results-list {
+  .search-results__list-img {
+    width: 270px;
+    max-width: 270px;
+
+    @include respond-max(776) {
+      width: 200px;
+      max-width: 200px;
+    }
+
+    @include respond-max(572) {
+      width: 150px;
+      max-width: 150px;
+    }
+  }
+
+  .search-results__list-item {
+    p {
+      max-width: 586px;
+
+    }
+
+    @include respond-max(572) {
+      flex-direction: column;
+    }
+  }
+}
+
+.organization.ui-datepicker .ui-datepicker-header {
+  background: #aed199;
+}
