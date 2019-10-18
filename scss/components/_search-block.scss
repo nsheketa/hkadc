@@ -18,7 +18,7 @@
   }
 
   h2 {
-    margin-bottom: 13px;
+    margin-bottom: 20px;
   }
 }
 
@@ -38,13 +38,16 @@
   &--sm {
     flex: 1 0 35%;
   }
+  &--full{
+    flex: 1 0 100%;
+  }
 
   @include respond-max(1024) {
     &--lg {
-      flex: 1 0 100%;
+      flex: 1 0 auto;
     }
     &--sm {
-      flex: 1 0 100%;
+      flex: 1 0 auto;
     }
   }
 }
@@ -104,8 +107,8 @@
     width: 100%;
     height: 2px;
     background-color: #8b5f14;
-    transform: scaleX(0);
-    opacity: 0;
+    transform: scaleX(1);
+    opacity: 1;
     transform-origin: left;
     @include transition-04;
   }
@@ -117,7 +120,7 @@
     bottom: -2px;
     right: -3px;
     @include square(6px);
-    opacity: 0;
+    opacity: 1;
     border-radius: 50%;
     background-color: #8b5f14;
     @include transition-04;
@@ -126,11 +129,11 @@
 
   @include on-event{
     &:before{
-      transform: scaleX(1);
-      opacity: 1;
+      transform: scaleX(0);
+      opacity: 0;
     }
     &:after{
-      opacity: 1;
+      opacity: 0;
     }
   }
 

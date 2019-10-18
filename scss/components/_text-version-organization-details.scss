@@ -1,0 +1,12 @@
+body.text-version {
+  .organization-detail__title {
+    &:before, &:after {
+      display: none;
+    }
+  }
+  .organization-detail__list-title {
+    h4 {
+      color: $textColor;
+    }
+  }
+}

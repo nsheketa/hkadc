@@ -1,0 +1,72 @@
+.search-detail__schedule {
+  padding-top: 30px;
+
+  @include respond-max(572){
+    padding-top: 0;
+  }
+}
+
+.search-detail__schedule-header {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sd-schedule__header-item {
+  display: block;
+  padding: 13px;
+  min-width: 100px;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  flex: 0;
+  margin-right: 8px;
+  text-align: center;
+  transform: skewX(-27deg);
+  background-color: #9f9f9f;
+  &.is-active {
+    background-color: #42bdcc;
+  }
+
+  h4 {
+    line-height: 1;
+    transform: skewX(27deg);
+    text-shadow: 1px 1px 0px rgba(149, 146, 146, 0.47);
+    color: #fff;
+  }
+}
+
+.sd-schedule__header-line {
+  height: 8px;
+  flex: 1 0 auto;
+  background: url('#{$imgUrl}general/gradient-line.png') no-repeat left center /100%;
+
+  @include respond-max(572) {
+    display: none;
+  }
+}
+
+.sd-schedule__body-row {
+  min-height: 86px;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+
+  .row{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.sd-schedule__body-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  p {
+    max-width: 205px;
+  }
+  @include respond-max(572){
+    align-items: flex-start;
+    margin-bottom: 3px;
+  }
+}

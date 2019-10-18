@@ -1,0 +1,44 @@
+.article__search-block {
+  border: 5px solid #63b5d1;
+  background-color: #88c7dd;
+  &:before {
+    border-bottom: 5px solid #63b5d1;
+  }
+
+  h2 {
+    color: #176b88;
+  }
+}
+
+.article__row{
+  @include respond-max(768){
+    margin-bottom: -20px;
+    .search__input-wrap{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.article-search__results-list {
+  .search-results__list-item {
+    p {
+      max-width: 586px;
+      font-weight: 600;
+    }
+  }
+
+  .search-results__list-img {
+    width: 270px;
+    max-width: 270px;
+
+    @include respond-max(776) {
+      width: 200px;
+      max-width: 200px;
+    }
+
+    @include respond-max(572) {
+      width: 100px;
+      max-width: 100px;
+    }
+  }
+}

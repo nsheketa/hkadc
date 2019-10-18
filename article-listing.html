@@ -1,0 +1,416 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Article Listing</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="is-mobile"></div>
+
+<header class="header fade-in">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" title="Hong Kong Arts Development Council">
+                <img src="img/logo.svg" alt="Hong Kong Arts Development Council">
+                <span class="img-text"></span>
+            </a>
+
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-content__top">
+                        <div class="header-content__top-item">
+                            <a href="#" class="header-content__text-version header-content__version">純文字版本</a>
+                            <a href="#" class="header-content__graphic-version header-content__version is-active">Graphical Version</a>
+                        </div>
+                        <div class="header-content__top-item">
+                            <span class="header-content__font-label">字體大小</span>
+                            <a href="#" class="header-content__font-controls header-content__font-increase"></a>
+                            <a href="#" class="header-content__font-controls header-content__font-decrease"></a>
+                        </div>
+                        <div class="header-content__lang">
+                            <div class="header-content__top-item">
+                                <a href="#" class="header-content__top-lang">Eng</a>
+                            </div>
+                            <!--<div class="header-content__top-item">-->
+                            <!--<a href="#" class="header-content__top-lang">简体</a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="header-content__bottom">
+                        <nav class="header-nav">
+                            <div class="header-nav__item header-nav__dropdown-parent">
+                                <div class="header-nav__dropdown-label">關於我們</div>
+                                <ul class="header-nav__dropdown">
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-nav__item">
+                                <a href="#" class="header-nav__link">年鑑專題</a>
+                            </div>
+                            <div class="header-nav__item">
+                                <span class="header-nav__search-label">搜尋 : </span>
+                                <div class="header-nav__search-tags">
+                                    <a href="event-listing.html" class="header-nav__link">活動</a>
+                                    <a href="people-listing.html" class="header-nav__link">個人</a>
+                                    <a href="organization-listing.html" class="header-nav__link">機構</a>
+                                </div>
+                            </div>
+                            <div class="header-nav__item hide-in-mob header-nav__search">
+                                <button type="button" title="Search Link" class="header__search-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g>
+                                            <g>
+                                                <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" title="Search Link" class="header__search-link show-in-mob">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                    <g>
+                        <g>
+                            <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="hamburger show-in-mob">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="search-listing article-listing">
+        <div class="container">
+            <div class="search-listing__inner">
+                <div class="search-block article__search-block fade-in">
+                    <h2>文章</h2>
+                    <div class="search-block__inner">
+                        <div class="search__col search__col--full">
+                            <form class="search-form">
+                                <div class="search-form__inner fade-in">
+                                    <div class="search__subcolumn">
+                                        <div class="search__row row no-gutters">
+                                            <div class="col-12 col-md-8">
+                                                <div class="search__input-wrap">
+                                                    <input type="text" class="search__input" placeholder="關鍵字">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search__row article__row row no-gutters">
+                                            <div class="col-12 col-md-4">
+                                                <div class="search__input-wrap">
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">年份</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">年份</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="search__input-wrap">
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">分類</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">分類</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="search__input-wrap">
+                                                    <div class="form__select-wrap">
+                                                        <p class="form__select-placeholder">標籤</p>
+                                                        <span class="icon"></span>
+                                                        <select name="" class="form__select">
+                                                            <option value="0">標籤</option>
+                                                            <option value="1">Option 01</option>
+                                                            <option value="2">Option 02</option>
+                                                            <option value="2">Option 03</option>
+                                                            <option value="2">Option 04</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search__submit-wrap">
+                                        <button type="submit" class="search__btn">搜尋
+                                            <img src="img/general/icon-search.svg" alt="Search Icon">
+                                        </button>
+                                        <button type="button" class="search__btn">重設</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-results">
+                    <div class="search-results__header no-category">
+                        <div class="search-results__header-info fade-in">
+                            <div class="search-results__count">共 <span>262</span> 搜尋紀錄</div>
+                            <a href="#" class="search-results__export"><span class="search-results__header-icon"></span>
+                                匯出紀錄
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="search-results__list article-search__results-list">
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-01.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年12月12日</a>
+                                </h5>
+                               <p>世界文化藝術節2015——「節外生字」徵文獎勵計劃 X 藝評寫作講座</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-02.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年7月5日</a>
+                                </h5>
+                                <p>重寫我城：評論的十二種未來式</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-03.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年9月14日 - 2016年2月15日</a>
+                                </h5>
+                                <p>「新戲匠」系列 ─ 劇評培訓計劃第三擊 (2015-16劇季)</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-default.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">《2015年10月15日 - 2016年4月22日》</a>
+                                </h5>
+                               <p>2015/16 高中生演藝賞析計劃</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-01.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年12月12日</a>
+                                </h5>
+                                <p>世界文化藝術節2015——「節外生字」徵文獎勵計劃 X 藝評寫作講座</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-02.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年7月5日</a>
+                                </h5>
+                                <p>重寫我城：評論的十二種未來式</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-03.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">2015年9月14日 - 2016年2月15日</a>
+                                </h5>
+                                <p>「新戲匠」系列 ─ 劇評培訓計劃第三擊 (2015-16劇季)</p>
+                            </div>
+                        </div>
+                        <div class="search-results__list-item fade-in">
+                            <a href="#" class="search-results__list-img">
+                                <img src="img/article-listing/item-default.png" alt="">
+                            </a>
+                            <div class="search-results__list-content">
+                                <h5 class="search-results__list-title">
+                                    <a href="#">《2015年10月15日 - 2016年4月22日》</a>
+                                </h5>
+                                <p>2015/16 高中生演藝賞析計劃</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--pagination-->
+                    <div class="pagination__wrap fade-in">
+                        <ul class="pagination-list">
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link text-eng">&lt;</a>
+                            </li>
+                            <li class="pagination-list__item is-active">
+                                <a href="#" class="pagination-list__link">1</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">2</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">3</a>
+                            </li>
+                            <li class="pagination-list__item is-hidden">
+                                <a href="#" class="pagination-list__link-hidden">
+                                    <span></span><span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">8</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">9</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link text-eng">&gt;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--pagination-->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-item fade-in">
+                <h3>關於我們</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Background and purpose</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">How to utilize the website</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Acknowledgement</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Glossary and Remarks</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="footer-item fade-in">
+                <h3>年鑑專題</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">舞蹈年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲劇年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲曲年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">古典音樂年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">視覺藝術年鑑</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-contacts fade-in">
+                <h3>聯絡我們</h3>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-location.svg" alt="Location">
+                    </span>
+                    <p>地址</p>
+                    <p>香港鰂魚涌英皇道1063號10樓</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-phone.svg" alt="Phone">
+                    </span>
+                    <p>電話：+852 2827 8786</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-fax.svg" alt="Fax">
+                    </span>
+                    <p>傳真：+852 2519 9301 / 2824 0585</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-mail.svg" alt="Email">
+                    </span>
+                    <p>電郵： hkadc@hkadc.org.hk</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright fade-in">
+            <p>© 2019 香港藝術發展局 版權所有 | 免責條款</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal modal-search">
+    <button type="button" class="modal__close">
+        <img src="img/general/icon-close.svg" alt="Close Search">
+        <span class="img-text"></span>
+    </button>
+    <div class="modal-search__inner">
+        <form action="#">
+            <div class="modal-search__input-wrap">
+                <input type="search" class="modal-search__input" autofocus placeholder="Search by Keywords">
+                <button type="submit" class="modal-search__submit-btn">
+                    <img src="img/general/icon-search-white.svg" alt="Submit Search">
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/vendor/jquery-ui.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/vendor/Chart.min.js"></script>
+<script src="js/vendor/utils.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/vendor/jquery.cloudly.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -64,12 +64,22 @@ h4, .h4 {
   }
 }
 
+h5, .h5 {
+  font-size: 1rem; // 14px;
+  font-weight: 400;
+  line-height: 1.71rem; //24px;
+
+  @include respond-max(1024) {
+    font-size: 1rem; //14px
+  }
+}
+
 h6,.h6{
   font-size: 0.86rem; //12px
 }
 
 p {
-  font-size: 1rem; //14px
+  font-size: 1.2rem; //14px
   font-weight: 400;
   line-height: 1.72rem; //24px
 

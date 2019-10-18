@@ -45,7 +45,7 @@ body.text-version{
     border: 1px solid $textColor;
     background-color: transparent !important;
     border-radius: 0;
-    color: $textColor;
+    color: $textColor !important;
   }
 
   .search-results__category-item{

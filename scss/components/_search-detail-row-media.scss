@@ -1,10 +1,10 @@
 //MEDIA
-.event-detail__row-media{
+.search-detail__row-media{
   margin-bottom: 31px;
 
 }
 
-.event-detail__media-main{
+.search-detail__media-main{
   background: url("#{$imgUrl}event-search/poster.png")no-repeat center /100% 100%;
   padding: 5px 10px;
   position: relative;
@@ -46,14 +46,14 @@
   }
 }
 
-.event-detail__content-media{
+.search-detail__content-media{
   display: flex;
   position: relative;
   //padding-top: 19px;
   margin-bottom: 31px;
 }
 
-.event-detail__media-item{
+.search-detail__media-item{
   max-width: 60px;
   margin-right: 34px;
   img{

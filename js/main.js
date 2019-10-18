@@ -268,7 +268,7 @@ $(document).ready(function () {
                     count.prop('Counter', 0).animate({
                         Counter: count.text()
                     }, {
-                        duration: 1600,
+                        duration: 500,
                         easing: 'swing',
                         step: function (now) {
                             count.text(parseInt(now));
@@ -333,6 +333,18 @@ $(document).ready(function () {
         })
 
     });
+
+    //Tag cloud
+    // https://derekhilldesign.com/projects/cloudly/
+
+    if($("#people-tag__list").length > 0){
+        $("#people-tag__list").cloudly({
+            tagMin: 16,
+            tagMax: 16,
+            impColor: 'white',
+            tagColor: 'white'
+        });
+    }
 
     //Event Listing Page
     $('.advanced-search__link').on('click', function (e) {

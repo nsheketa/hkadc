@@ -79,7 +79,7 @@
   }
 
   &.is-animated {
-    animation: svgAmimate 1.5s linear;
+    animation: svgAmimate .5s linear;
     animation-fill-mode: forwards;
   }
 
@@ -111,17 +111,9 @@
 .category__path-dot {
   opacity: 0;
   animation-fill-mode: forwards;
+  @include transition-03;
   &.is-visible {
     opacity: 1;
-  }
-}
-
-.path-dot__end {
-  &.is-animated {
-    animation: addVisibility 0.3s 1.6s;
-  }
-  &.is-not-animated {
-    animation: removeVisibility 0s;
   }
 }
 
@@ -171,7 +163,8 @@
   text-align: center;
 
   p {
-    color: #7e7d7d;
+    color: #ada8a8;
+    margin-top: 12px;
   }
 
   h2 {
@@ -198,23 +191,5 @@
 
   @include respond-max(1024) {
     margin-left: 60px;
-  }
-}
-
-@keyframes addVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes removeVisibility {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }

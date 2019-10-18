@@ -123,7 +123,7 @@
   &:before{
     content: '';
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: #fff;
     position: absolute;
@@ -137,7 +137,7 @@
   &:after{
     content: '';
     display: block;
-    width: 1px;
+    width: 2px;
     height: 100%;
     background-color: #fff;
     position: absolute;
@@ -164,15 +164,15 @@
   color: #fff;
   text-align: center;
   font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(#333, 0.49);
+  text-shadow: 1px 1px 1px rgba(#333, 0.79);
   @include center;
   position: relative;
-  padding: 10px 16px;
+  padding: 18px 24px;
 
   &:before{
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     width: 100%;
     background-color: #fff;
     position: absolute;
@@ -186,7 +186,7 @@
   &:after{
     content: '';
     display: block;
-    height: 1px;
+    height: 2px;
     width: 100%;
     background-color: #fff;
     position: absolute;
@@ -207,14 +207,14 @@
   }
   p {
     position: relative;
-    font-size: 0.86rem; //12px;
+    font-size: 1.3rem; //12px;
     line-height: 1.72rem; //24px;
     font-weight: 400;
     &:before {
       content: '';
       display: inline-block;
       background: url("#{$imgUrl}general/icon-search-white.svg") no-repeat center /contain;
-      @include size(11px, 10px);
+      @include size(16px, 15px);
       margin-right: 3px;
     }
   }

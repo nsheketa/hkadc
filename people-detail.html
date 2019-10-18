@@ -1,0 +1,483 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Search People</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="is-mobile"></div>
+
+<header class="header header--purple fade-in">
+    <div class="container">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" title="Hong Kong Arts Development Council">
+                <img src="img/logo.svg" alt="Hong Kong Arts Development Council">
+                <span class="img-text"></span>
+            </a>
+
+            <div class="header-content">
+                <div class="container">
+                    <div class="header-content__top">
+                        <div class="header-content__top-item">
+                            <a href="#" class="header-content__text-version header-content__version">純文字版本</a>
+                            <a href="#" class="header-content__graphic-version header-content__version is-active">Graphical Version</a>
+                        </div>
+                        <div class="header-content__top-item">
+                            <span class="header-content__font-label">字體大小</span>
+                            <a href="#" class="header-content__font-controls header-content__font-increase"></a>
+                            <a href="#" class="header-content__font-controls header-content__font-decrease"></a>
+                        </div>
+                        <div class="header-content__lang">
+                            <div class="header-content__top-item">
+                                <a href="#" class="header-content__top-lang">Eng</a>
+                            </div>
+                            <!--<div class="header-content__top-item">-->
+                            <!--<a href="#" class="header-content__top-lang">简体</a>-->
+                            <!--</div>-->
+                        </div>
+                    </div>
+                    <div class="header-content__bottom">
+                        <nav class="header-nav">
+                            <div class="header-nav__item header-nav__dropdown-parent">
+                                <div class="header-nav__dropdown-label">關於我們</div>
+                                <ul class="header-nav__dropdown">
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a></li>
+                                    <li class="header-nav__dropdown-item"><a href="#"
+                                                                             class="header-nav__link">Option</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-nav__item">
+                                <a href="#" class="header-nav__link">年鑑專題</a>
+                            </div>
+                            <div class="header-nav__item">
+                                <span class="header-nav__search-label">搜尋 : </span>
+                                <div class="header-nav__search-tags">
+                                    <a href="event-listing.html" class="header-nav__link">活動</a>
+                                    <a href="people-listing.html" class="header-nav__link is-active">個人</a>
+                                    <a href="organization-listing.html" class="header-nav__link">機構</a>
+                                </div>
+                            </div>
+                            <div class="header-nav__item hide-in-mob header-nav__search">
+                                <button type="button" title="Search Link" class="header__search-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                        <g>
+                                            <g>
+                                                <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" title="Search Link" class="header__search-link show-in-mob">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                    <g>
+                        <g>
+                            <path d="M2.47 6.83c0-2.676 2.084-4.858 4.639-4.858 2.554 0 4.638 2.182 4.638 4.858 0 2.676-2.084 4.859-4.638 4.859-2.555 0-4.639-2.183-4.639-4.859zm14.05 8.38l-4.168-4.366A6.917 6.917 0 0 0 13.63 6.83C13.63 3.028 10.672 0 7.109 0 3.479 0 .52 3.098.52 6.83c0 3.802 2.957 6.83 6.52 6.83a6.296 6.296 0 0 0 3.698-1.197l4.168 4.366z"/>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <div class="hamburger show-in-mob">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="search-detail">
+        <!--mob item-->
+        <div class="search-detail__title show-in-mob fade-in">
+            <div class="container">
+                <h2>楊雲濤</h2>
+            </div>
+        </div>
+        <!--mob item-->
+
+        <div class="share hide-in-mob">
+            <div class="container">
+                <div class="share__inner fade-in">
+                    <p class="share-label">分享</p>
+                    <ul class="share-list">
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                        </a></li>
+                        <li class="share-list__item"><a href="#" class="share-list__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="search-detail__category-title people-detail__category-title fade-in">
+                <h1 class="fade-in">楊雲濤</h1>
+            </div>
+
+            <div class="search-detail__inner">
+                <div class="search-detail__main">
+                    <!--event detail row-->
+                    <div class="search-detail__row">
+                        <div class="search-detail__col search-detail__col-sm">
+                            <div class="search-detail__media-main people-detail__media-main fade-in">
+                                <figure>
+                                    <img src="img/people-search/item.png" loading="lazy" alt="People Detail Image">
+                                </figure>
+                                <span class="img-text"></span>
+                            </div>
+                            <!--mob item-->
+                            <div class="search-submenu search-submenu--mob people__search-submenu fade-in">
+                                <div class="search-submenu__item">
+                                    <h6>類別</h6>
+                                    <p>編舞</p>
+                                </div>
+                                <div class="search-submenu__item">
+                                    <h6>任職藝團</h6>
+                                    <p>香港舞蹈團</p>
+                                </div>
+                            </div>
+                            <!--mob item-->
+
+                            <!--desktop item-->
+                            <div class="search-detail__intro search-detail__intro--desktop people-detail__intro fade-in">
+                                <h2>簡歷</h2>
+                            </div>
+                            <!--desktop item-->
+                        </div>
+                        <div class="search-detail__col search-detail__col-lg fade-in">
+                            <div class="search-detail__content">
+
+                                <!--desktop item-->
+                                <div class="search-submenu search-submenu--desktop people__search-submenu">
+                                    <div class="search-submenu__item">
+                                        <h6>類別</h6>
+                                        <p>編舞</p>
+                                    </div>
+                                    <div class="search-submenu__item">
+                                        <h6>任職藝團</h6>
+                                        <p>香港舞蹈團</p>
+                                    </div>
+                                </div>
+                                <!--desktop item-->
+
+                                <div class="search-detail__title people-detail__title hide-in-mob">
+                                    <h2>楊雲濤</h2>
+                                </div>
+                                <div class="search-detail__content-media">
+                                    <div class="search-detail__media-item">
+                                        <img src="img/people-search/item-sm.png" alt="Event Search Image">
+                                        <span class="img-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-detail__content">
+                                <!--mob item-->
+                                <div class="search-detail__intro search-detail__intro--mob fade-in">
+                                    <h2>簡歷</h2>
+                                </div>
+                                <!--mob item-->
+                                <p>
+                                    白族，畢業於中央民族大學舞蹈系，曾任廣東現代舞團、北京現代舞團舞蹈員。曾於首屆中國現代舞大賽獲群舞表演銅獎，之後由其主演的舞劇《媽勒訪天邊》獲第二屆中國舞蹈「荷花獎」比賽金獎及優秀男主角獎、第六屆中國藝術節優秀劇目獎，於第七屆全國少數民族舞蹈比賽憑《雲之南》獲獨舞表演金獎。
+                                </p>
+                                <p>
+                                    2002 年加入香港舞蹈團，擔任首席舞蹈員，並憑舞劇《水滸傳》及《大地之歌》獲2003 年香港舞蹈年獎。2005 年加入城市當代舞蹈團，憑該團節目《霸王》之演出再獲2006年香港舞蹈年獎。2007
+                                    年出任香港舞蹈團助理藝術總監一職。2010
+                                    年獲香港藝術發展局頒發2009「年度最佳藝術家獎（舞蹈）」，另分別於2013年憑《蘭亭‧祭姪》獲2013年香港舞蹈年獎「最值得表揚舞蹈製作」及憑《花木蘭》獲2014年香港舞蹈年獎「最值得表揚舞蹈製作」，「最值得表揚群舞演出」及憑《風雲》獲2015年香港舞蹈年獎「最值得表揚舞蹈製作」。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--event detail row-->
+                </div>
+
+                <!--aside-->
+                <div class="search-detail__aside people-detail__aside fade-in">
+                    <h3>資訊</h3>
+                    <div class="search-detail__aside-content people-detail__aside-content">
+                        <div class="search-detail__aside-row">
+                            <p> 香港舞蹈年獎 <br>
+                                「最值得表揚舞蹈製作」 <br>
+                                《風雲》- 2015</p>
+                        </div>
+                        <div class="search-detail__aside-row">
+                            <p> 香港舞蹈年獎 <br>
+                                「最值得表揚舞蹈製作」<br>
+                                《蘭亭‧祭姪》- 2013</p>
+                        </div>
+                        <div class="search-detail__aside-row">
+                            <p> 香港藝術發展局
+                                「年度最佳藝術家獎（舞蹈）」
+                                - 2009</p>
+                        </div>
+                    </div>
+                </div>
+                <!--aside-->
+            </div>    <!--event detail inner-->
+
+            <!--search schedule-->
+            <div class="search-detail__schedule fade-in">
+                <div class="search-detail__schedule-header">
+                    <a href="#" class="sd-schedule__header-item is-active">
+                        <h4>藝術統籌</h4>
+                    </a>
+                    <a href="#" class="sd-schedule__header-item">
+                        <h4>編舞</h4>
+                    </a>
+                    <div class="sd-schedule__header-line"></div>
+                </div>
+                <div class="search-detail__schedule-body">
+                    <div class="sd-schedule__body-row">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <div class="sd-schedule__body-item text-eng"><p>2012.10.26</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>香港舞蹈團—外展及教育部</p></div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sd-schedule__body-item"><p>《共舞紀事》演前舞蹈教育推廣演出：《舞蹈與生活》</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>藝術統籌及編舞</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sd-schedule__body-row">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <div class="sd-schedule__body-item text-eng"><p>2012.10.26-27</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>香港舞蹈團外展及教育部</p></div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sd-schedule__body-item"><p>荃灣大會堂場地伙伴計劃：《共舞紀事 》</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>藝術統籌及編舞</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sd-schedule__body-row">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <div class="sd-schedule__body-item text-eng"><p>2012.09.14-16</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>香港舞蹈團</p></div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sd-schedule__body-item"><p>八樓平台 ─《來自台北》</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>藝術統籌</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sd-schedule__body-row">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <div class="sd-schedule__body-item text-eng"><p>2012.10.26</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>香港舞蹈團—外展及教育部</p></div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sd-schedule__body-item"><p>《共舞紀事》演前舞蹈教育推廣演出：《舞蹈與生活》</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>藝術統籌及編舞</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sd-schedule__body-row">
+                        <div class="row">
+                            <div class="col-6 col-md-2">
+                                <div class="sd-schedule__body-item text-eng"><p>2012.10.26-27</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>香港舞蹈團外展及教育部</p></div>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <div class="sd-schedule__body-item"><p>荃灣大會堂場地伙伴計劃：《共舞紀事 》</p></div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="sd-schedule__body-item"><p>藝術統籌及編舞</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--pagination-->
+                <div class="pagination__wrap fade-in">
+                    <ul class="pagination-list">
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link text-eng">&lt;</a>
+                        </li>
+                        <li class="pagination-list__item is-active">
+                            <a href="#" class="pagination-list__link">1</a>
+                        </li>
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link">2</a>
+                        </li>
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link">3</a>
+                        </li>
+                        <li class="pagination-list__item is-hidden">
+                            <a href="#" class="pagination-list__link-hidden">
+                                <span></span><span></span><span></span>
+                            </a>
+                        </li>
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link">8</a>
+                        </li>
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link">9</a>
+                        </li>
+                        <li class="pagination-list__item">
+                            <a href="#" class="pagination-list__link text-eng">&gt;</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--pagination-->
+            </div>
+            <!--search schedule-->
+
+            <div class="share show-in-mob">
+                <div class="container">
+                    <div class="share__inner fade-in">
+                        <p class="share-label">分享</p>
+                        <ul class="share-list">
+                            <li class="share-list__item"><a href="#" class="share-list__link">
+                                <svg enable-background="new 0 0 56.693 56.693" height="56.693px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" width="56.693px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/></svg>
+                            </a></li>
+                            <li class="share-list__item"><a href="#" class="share-list__link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                                </svg>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer-item fade-in">
+                <h3>關於我們</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Background and purpose</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">How to utilize the website</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Acknowledgement</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">Glossary and Remarks</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="footer-item fade-in">
+                <h3>年鑑專題</h3>
+                <ul class="footer-list">
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">舞蹈年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲劇年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">戲曲年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">古典音樂年鑑</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-list__link">視覺藝術年鑑</a></li>
+                </ul>
+            </div>
+            <div class="footer-item footer-contacts fade-in">
+                <h3>聯絡我們</h3>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-location.svg" alt="Location">
+                    </span>
+                    <p>地址</p>
+                    <p>香港鰂魚涌英皇道1063號10樓</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-phone.svg" alt="Phone">
+                    </span>
+                    <p>電話：+852 2827 8786</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-fax.svg" alt="Fax">
+                    </span>
+                    <p>傳真：+852 2519 9301 / 2824 0585</p>
+                </div>
+                <div class="footer-contacts__item">
+                    <span class="footer-contacts__icon">
+                        <img src="img/general/icon-mail.svg" alt="Email">
+                    </span>
+                    <p>電郵： hkadc@hkadc.org.hk</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright fade-in">
+            <p>© 2019 香港藝術發展局 版權所有 | 免責條款</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal modal-search">
+    <button type="button" class="modal__close">
+        <img src="img/general/icon-close.svg" alt="Close Search">
+        <span class="img-text"></span>
+    </button>
+    <div class="modal-search__inner">
+        <form action="#">
+            <div class="modal-search__input-wrap">
+                <input type="search" class="modal-search__input" autofocus placeholder="Search by Keywords">
+                <button type="submit" class="modal-search__submit-btn">
+                    <img src="img/general/icon-search-white.svg" alt="Submit Search">
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/vendor/Chart.min.js"></script>
+<script src="js/vendor/utils.js"></script>
+<script src="js/vendor/ScrollMagic.min.js"></script>
+<script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/vendor/jquery.cloudly.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

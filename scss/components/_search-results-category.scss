@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: center;
   @include transition-03;
-  background: url("#{$imgUrl}event-listing/category-shape.svg")no-repeat center/contain;
+  background: url("#{$imgUrl}event-listing/category-shape-darker.svg")no-repeat center/contain;
   span{
     max-width: 32px;
   }

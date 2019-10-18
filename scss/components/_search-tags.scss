@@ -69,3 +69,18 @@
     transform: translate(1px, 1px);
   }
 }
+
+/// CLOUDLY
+
+.cloudly-tag__list{
+  margin: 0;
+  .cloudly-tags{
+    a{
+      display: inline-block;
+      min-height: 10px;
+      padding: 7px 15px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+    }
+  }
+}

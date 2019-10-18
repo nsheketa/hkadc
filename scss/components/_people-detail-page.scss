@@ -1,0 +1,54 @@
+.people-detail__category-title {
+  background-color: #825caa;
+  h1 {
+    color: #614083;
+  }
+}
+
+.people-detail__media-main {
+  background: url('#{$imgUrl}people-search/bg.png') no-repeat center/100% 100%;
+}
+
+.people__search-submenu {
+  .search-submenu__item {
+    h6 {
+      color: #813e9f;
+    }
+  }
+}
+
+.people-detail__title {
+  &:before, &:after {
+    background-color: #813e9f;
+  }
+}
+
+.people-detail__aside{
+  padding-top: 99px;
+  @include respond-max(1024){
+    padding-top: 0;
+  }
+}
+
+.people-detail__aside-content{
+  border-color: #813e9f;
+  min-width: 289px;
+  &:before{
+    background-color: #813e9f;
+  }
+
+  p{
+    position: relative;
+    padding-left: 40px;
+    max-width: 224px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      background: url("#{$imgUrl}general/icon-awards.svg")no-repeat center /contain;
+      @include size(20px, 30px);
+    }
+  }
+}

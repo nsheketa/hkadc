@@ -8,12 +8,12 @@ $Helvetica: "Helvetica",sans-serif;
 $baseFontFamily: $NotoSans, "Microsoft JhengHei", STHeiti, 华文黑体, SimHei, 黑体, sans-serif;
 
 /// Base font size (rem), line height and letter spacing
-@mixin font-size($size: 14) {
+@mixin font-size($size: 16) {
   font-size: $size * 1px;
   font-size: ($size / $baseFontSize) * 1rem;
 }
 
-$baseFontSize: 14;
+$baseFontSize: 16;
 $baseFontSizePixel: $baseFontSize * 1px;
 
 $baseLineHeight: 1.4;

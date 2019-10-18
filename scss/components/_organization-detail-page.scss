@@ -1,0 +1,142 @@
+.organization-detail{
+  padding-top: 180px;
+
+  @include respond-max(1024){
+    padding-top: 120px;
+  }
+}
+
+.organization-detail__content{
+  padding-right: 20px;
+  padding-bottom: 50px;
+  .share{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .share-list{
+    padding-right: 0;
+  }
+
+  @include respond-max(1024){
+    padding-right: 0;
+  }
+  @include respond-max(768){
+    padding-bottom: 50px;
+  }
+}
+
+.organization-detail__title{
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:before, &:after{
+    content: '';
+    display: block;
+    background-color: #93dd67;
+  }
+  &:before{
+    @include square(6px);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &:after{
+    right: 0;
+    flex: 1 0 auto;
+    height: 1px;
+  }
+  h1{
+    font-weight: 700;
+    margin-right: 10px;
+  }
+}
+
+.organization-detail__inner{
+  @include respond-max(1024){
+    padding-top: 0;
+  }
+}
+
+.organization-detail__list{
+  padding-top: 50px;
+}
+
+.organization-detail__list-row{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 17px;
+  
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+
+.organization-detail__list-title{
+  width: 100px;
+  min-width: 100px;
+  padding-right: 15px;
+  h4{
+    color: #449813;
+  }
+}
+
+.organization-detail__list-info{
+  flex: 1 0 auto;
+  ol{
+    padding-left: 15px;
+  }
+}
+
+.organization-detail__media-main{
+  background: url("#{$imgUrl}organization-search/bg.png")no-repeat center /100% 100%;
+  top: 0;
+  margin-bottom: 35px;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  img{
+    width: calc(100% - 8px);
+    top: 4px;
+  }
+}
+
+.organization-detail__content-media{
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  .search-detail__media-item{
+    max-width: 20%;
+    margin-right: 0;
+  }
+}
+
+.organization-detail__aside{
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 0px;
+
+}
+
+.organization-detail__aside-content{
+  border-color: #93dd67;
+  &:before{
+    background-color: #93dd67;
+  }
+
+  span{
+    color: $textColor;
+    min-width: 122px;
+  }
+  p{
+    max-width: 100%;
+  }
+}
+
+.organization-detail__schedule-body{
+  p{
+    max-width: 100%;
+  }
+}

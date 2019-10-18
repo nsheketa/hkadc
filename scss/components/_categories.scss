@@ -27,9 +27,12 @@
   //  max-width: 33.33%;
   //}
   &.is-animated{
-    //.category__path-dot{
-    //  opacity: 1;
-    //}
+    .category__path-dot{
+      opacity: 1;
+    }
+    .path-dot__end{
+      transition-delay: .6s;
+    }
   }
 
   @include respond-max(1024) {

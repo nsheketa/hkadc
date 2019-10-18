@@ -131,46 +131,50 @@
                                                     <p class="form__select-placeholder">分類</p>
                                                     <span class="icon"></span>
                                                     <select name="" class="form__select">
-                                                        <option value="0">分類</option>
-                                                        <option value="1">Option 01</option>
-                                                        <option value="2">Option 02</option>
-                                                        <option value="2">Option 03</option>
-                                                        <option value="2">Option 04</option>
+                                                        <option value="0">戲劇</option>
+                                                        <option value="1">舞蹈</option>
+                                                        <option value="2">音樂</option>
+                                                        <option value="2">戲曲</option>
+                                                        <option value="2">視覺藝術</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="search__input-wrap search__input-wrap--half">
-                                                <input type="text" class="search__input" placeholder="Art Genre (sub cat, multi select)">
+                                                                                                <div class="form__select-wrap">
+                                                    <p class="form__select-placeholder">子分類</p>
+                                                    <span class="icon"></span>
+                                                    <select name="" class="form__select">
+                                                        <option value="0">子分類1</option>
+                                                        <option value="1">子分類2</option>
+                                                        <option value="2">子分類3</option>
+                                                        <option value="2">子分類4</option>
+                                                        <option value="2">子分類5</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="search__row">
-                                            <button type="button" class="advanced-search__link">Advanced Search</button>
+                                            <button type="button" class="advanced-search__link">進階搜尋</button>
                                         </div>
                                         <div class="search__advanced">
                                             <div class="search__row">
                                                 <div class="search__input-wrap search__input-wrap--half">
                                                     <div class="form__select-wrap">
-                                                        <p class="form__select-placeholder">本地 ／ 非本地</p>
+                                                        <p class="form__select-placeholder">地區</p>
                                                         <span class="icon"></span>
                                                         <select name="" class="form__select">
-                                                            <option value="0">本地 ／ 非本地</option>
-                                                            <option value="1">Option 01</option>
-                                                            <option value="2">Option 02</option>
-                                                            <option value="2">Option 03</option>
-                                                            <option value="2">Option 04</option>
+                                                            <option value="0">本地</option>
+                                                            <option value="1">非本地</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="search__input-wrap search__input-wrap--half">
                                                     <div class="form__select-wrap">
-                                                        <p class="form__select-placeholder">免費 ／ 付費</p>
+                                                        <p class="form__select-placeholder">費用</p>
                                                         <span class="icon"></span>
                                                         <select name="" class="form__select">
-                                                            <option value="0">免費 ／ 付費</option>
-                                                            <option value="1">Option 01</option>
-                                                            <option value="2">Option 02</option>
-                                                            <option value="2">Option 03</option>
-                                                            <option value="2">Option 04</option>
+                                                            <option value="0">免費</option>
+                                                            <option value="1">需付費</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -181,14 +185,11 @@
                                                 </div>
                                                 <div class="search__input-wrap search__input-wrap--half">
                                                     <div class="form__select-wrap">
-                                                        <p class="form__select-placeholder">室內 ／ 戶外</p>
+                                                        <p class="form__select-placeholder">場地種類</p>
                                                         <span class="icon"></span>
                                                         <select name="" class="form__select">
-                                                            <option value="0">室內 ／ 戶外</option>
-                                                            <option value="1">Option 01</option>
-                                                            <option value="2">Option 02</option>
-                                                            <option value="2">Option 03</option>
-                                                            <option value="2">Option 04</option>
+                                                            <option value="0">室內</option>
+                                                            <option value="1">戶外</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -217,26 +218,37 @@
                         <div class="search__col search__col--sm">
                             <div class="search-tags fade-in">
                                 <div class="search-tags__title">熱門搜尋</div>
-                                <div class="search-tag__list">
-                                    <div class="search-tag__item">
+                                <!--<div class="search-tag__list">-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">關鍵字 關鍵字</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">Test</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">Tag</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">Tag 01</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">Tag 999</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">Two tags</a>-->
+                                    <!--</div>-->
+                                    <!--<div class="search-tag__item">-->
+                                        <!--<a href="#" class="search-tag__link">關鍵字</a>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <div class="search-tag__list cloudly-tag__list" id="people-tag__list">
+                                    <div class="cloudly-tags">
                                         <a href="#" class="search-tag__link">關鍵字 關鍵字</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">Test</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">Tag</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">Tag 01</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">Tag 999</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">Two tags</a>
-                                    </div>
-                                    <div class="search-tag__item">
                                         <a href="#" class="search-tag__link">關鍵字</a>
                                     </div>
                                 </div>
@@ -395,38 +407,39 @@
                                 <p class="search-results__list-date">2017/11/03-05, 10-12</p>
                             </div>
                         </div>
-
-                        <div class="pagination__wrap fade-in">
-                            <ul class="pagination-list">
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link text-eng">&lt;</a>
-                                </li>
-                                <li class="pagination-list__item is-active">
-                                    <a href="#" class="pagination-list__link">1</a>
-                                </li>
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link">2</a>
-                                </li>
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link">3</a>
-                                </li>
-                                <li class="pagination-list__item is-hidden">
-                                    <a href="#" class="pagination-list__link-hidden">
-                                        <span></span><span></span><span></span>
-                                    </a>
-                                </li>
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link">8</a>
-                                </li>
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link">9</a>
-                                </li>
-                                <li class="pagination-list__item">
-                                    <a href="#" class="pagination-list__link text-eng">&gt;</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
+                    <!--pagination-->
+                    <div class="pagination__wrap fade-in">
+                        <ul class="pagination-list">
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link text-eng">&lt;</a>
+                            </li>
+                            <li class="pagination-list__item is-active">
+                                <a href="#" class="pagination-list__link">1</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">2</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">3</a>
+                            </li>
+                            <li class="pagination-list__item is-hidden">
+                                <a href="#" class="pagination-list__link-hidden">
+                                    <span></span><span></span><span></span>
+                                </a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">8</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link">9</a>
+                            </li>
+                            <li class="pagination-list__item">
+                                <a href="#" class="pagination-list__link text-eng">&gt;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--pagination-->
                 </div>
             </div>
         </div>
@@ -517,6 +530,7 @@
 <script src="js/vendor/utils.js"></script>
 <script src="js/vendor/ScrollMagic.min.js"></script>
 <script src="js/vendor/scrollreveal.min.js"></script>
+<script src="js/vendor/jquery.cloudly.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 
@@ -554,4 +568,16 @@
     });
 </script>
 
+<script>
+    $(document).ready(function (){
+        // https://derekhilldesign.com/projects/cloudly/
+
+        // $("#people-tag__list").cloudly({
+        //     tagMin: 16,
+        //     tagMax: 16,
+        //     impColor: 'white',
+        //     tagColor: 'white'
+        // });
+    });
+</script>
 </html>

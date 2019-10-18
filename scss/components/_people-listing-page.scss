@@ -41,9 +41,15 @@
   }
 
   .search-results__list-item {
+    padding-right: 96px;
     p {
       max-width: 586px;
-
+    }
+    @include respond-max(1024){
+      padding-right: 15px;
+    }
+    @include respond-max(768){
+      padding-right: 0px;
     }
   }
 }

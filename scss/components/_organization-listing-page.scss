@@ -30,6 +30,12 @@
 }
 
 .organization-search__results-list {
+  .search-results__list-item {
+    p {
+      max-width: 586px;
+    }
+  }
+
   .search-results__list-img {
     width: 270px;
     max-width: 270px;
@@ -40,19 +46,8 @@
     }
 
     @include respond-max(572) {
-      width: 150px;
-      max-width: 150px;
-    }
-  }
-
-  .search-results__list-item {
-    p {
-      max-width: 586px;
-
-    }
-
-    @include respond-max(572) {
-      flex-direction: column;
+      width: 100px;
+      max-width: 100px;
     }
   }
 }

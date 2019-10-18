@@ -34,13 +34,17 @@
 @import "components/ad-block";
 @import "components/search-modal";
 
-@import "components/event-detail-page";
-@import "components/event-detail-row-media";
-@import "components/event-submenu";
-@import "components/event-detail-aside";
-@import "components/event-detail-default";
+@import "components/search-detail";
+@import "components/search-detail-aside";
+@import "components/search-submenu";
+@import "components/search-detail-row-media";
+@import "components/search-detail-schedule";
 @import "components/share-list";
 @import "components/related";
+
+@import "components/event-detail-page";
+@import "components/people-detail-page";
+@import "components/organization-detail-page";
 
 @import "components/search-listing";
 @import "components/search-block";
@@ -54,10 +58,13 @@
 @import "components/event-listing-page";
 @import "components/organization-listing-page";
 @import "components/people-listing-page";
+@import "components/article-listing-page";
 
 @import "components/text-version-general";
 @import "components/text-version-homepage";
-@import "components/text-version-event-details";
+@import "components/text-version-search-details";
+@import "components/text-version-people-details";
+@import "components/text-version-organization-details";
 @import "components/text-version-search-listing";
 @import "components/text-version-event-listing";
 
