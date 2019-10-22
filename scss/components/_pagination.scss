@@ -54,7 +54,7 @@ $paginationGrey: #d5d5d5;
   @include transition-03;
   
   &.is-active, &:focus, &:active, &:hover{
-    background: #690000;
+    background: #df4548;
     .pagination-list__link{
       color: #fff;
     }

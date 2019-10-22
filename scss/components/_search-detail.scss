@@ -41,7 +41,8 @@
   display: flex;
 
   @include respond-max(1280){
-    padding-left: 40px;
+    //padding-left: 40px;
+    padding-left: 0px;
   }
 
   @include respond-max(1200){
@@ -82,6 +83,15 @@
   }
 
   @include respond-max(1280){
+    //&-sm{
+    //  max-width: 210px;
+    //}
+    &-lg{
+      padding-left: 20px;
+    }
+  }
+
+  @include respond-max(1024){
     &-sm{
       max-width: 210px;
     }
@@ -104,10 +114,10 @@
   }
 }
 
-.search-detail__title{
+.search-detail__content-top{
+  position: relative;
   margin-bottom: 31px;
   padding-bottom: 10px;
-  position: relative;
 
   &:before, &:after{
     content: '';
@@ -132,12 +142,6 @@
     margin-top: -3px;
   }
 
-  h2{
-    font-size: 1.86rem; //26px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
   @include respond-max(1280){
     &:before{
       width: 439px;
@@ -146,29 +150,37 @@
     &:after{
       left: 287px;
     }
-    h2{
-      font-size: 1.57rem; //22;
-    }
   }
   @include respond-max(1024){
-    margin-top: 31px;
     padding-bottom: 0;
+    margin-bottom: 0;
 
     &:before, &:after{
       display: none;
     }
-    h2{
-      font-size: 1.23rem; //18;
-    }
+  }
+}
+
+.search-detail__title{
+  position: relative;
+
+  h2{
+    font-size: 1.86rem; //26px;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
-  @include respond-max(768){
-    &:before{
-      width: 100%;
-      left: 0;
+  @include respond-max(1280){
+    h2{
+      font-size: 1.4rem;
     }
-    &:after{
-      left: 0;
+  }
+  @include respond-max(1024){
+    margin-top: 31px;
+    margin-bottom: 31px;
+
+    h2{
+      font-size: 1.23rem;
     }
   }
 }
@@ -192,7 +204,7 @@
 
   @include respond-max(1280){
     p{
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 }

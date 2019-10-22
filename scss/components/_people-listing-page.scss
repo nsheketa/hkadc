@@ -1,30 +1,23 @@
 .people__search-block {
-  border: 5px solid #aa75c6;
-  background-color: #cc9ae6;
+  //border: 5px solid #aa75c6;
+  //background-color: #cc9ae6;
   &:before {
-    border-bottom: 5px solid #aa75c6;
+    //border-bottom: 5px solid #aa75c6;
   }
 
   h2 {
-    color: #8730b5;
+    //color: #8730b5;
   }
 
   .search-tags__title {
-    color: #8730b5;
-    border-color: #690000;
+    //color: #8730b5;
+    //border-color: #df4548;
     &:before {
-      background-color: #690000;
+      //background-color: #df4548;
     }
 
     &:after {
-      background-color: #690000;
-    }
-  }
-
-  .search-tag__link {
-    background-color: #a366c3;
-    @include on-event {
-      background-color: rgba(#a366c3, 0.63);
+      //background-color: #df4548;
     }
   }
 }

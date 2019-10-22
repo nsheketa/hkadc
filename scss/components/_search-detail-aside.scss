@@ -21,7 +21,6 @@
   @include respond-max(1024){
     padding-left: 0;
     padding-top: 0px;
-    margin-bottom: 31px;
     margin-bottom: 50px;
     width: 100%;
     max-width: 100%;
@@ -73,6 +72,9 @@
 
   @include respond-max(1280){
     padding-right: 10px;
+    p, span{
+      font-size: 0.9rem;
+    }
   }
 
   @include respond-max(1200){

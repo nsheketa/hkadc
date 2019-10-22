@@ -23,8 +23,13 @@
   text-align: center;
   transform: skewX(-27deg);
   background-color: #9f9f9f;
+  @include transition-03;
   &.is-active {
-    background-color: #42bdcc;
+    background-color: #85585e;
+  }
+
+  @include on-event{
+    background-color: #85585e;
   }
 
   h4 {
@@ -38,7 +43,8 @@
 .sd-schedule__header-line {
   height: 8px;
   flex: 1 0 auto;
-  background: url('#{$imgUrl}general/gradient-line.png') no-repeat left center /100%;
+  //background: url('#{$imgUrl}general/gradient-line.png') no-repeat left center /100%;
+  background-color: #85585e;
 
   @include respond-max(572) {
     display: none;

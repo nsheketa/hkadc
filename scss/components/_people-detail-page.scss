@@ -1,26 +1,5 @@
-.people-detail__category-title {
-  background-color: #825caa;
-  h1 {
-    color: #614083;
-  }
-}
-
 .people-detail__media-main {
-  background: url('#{$imgUrl}people-search/bg.png') no-repeat center/100% 100%;
-}
-
-.people__search-submenu {
-  .search-submenu__item {
-    h6 {
-      color: #813e9f;
-    }
-  }
-}
-
-.people-detail__title {
-  &:before, &:after {
-    background-color: #813e9f;
-  }
+  background: url('#{$imgUrl}general/img-bg.png') no-repeat center/100% 100%;
 }
 
 .people-detail__aside{
@@ -31,11 +10,7 @@
 }
 
 .people-detail__aside-content{
-  border-color: #813e9f;
   min-width: 289px;
-  &:before{
-    background-color: #813e9f;
-  }
 
   p{
     position: relative;

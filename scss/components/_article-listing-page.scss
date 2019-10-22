@@ -1,21 +1,15 @@
-.article__search-block {
-  border: 5px solid #63b5d1;
-  background-color: #88c7dd;
-  &:before {
-    border-bottom: 5px solid #63b5d1;
-  }
-
-  h2 {
-    color: #176b88;
-  }
-}
-
 .article__row{
   @include respond-max(768){
     margin-bottom: -20px;
     .search__input-wrap{
       margin-bottom: 20px;
     }
+  }
+}
+
+.article-search__submit-wrap{
+  @include respond-max(768){
+    margin-top: 0;
   }
 }
 

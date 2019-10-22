@@ -65,6 +65,7 @@
 }
 
 .category__path {
+  stroke: #85585E;
   &-01 {
     stroke-dasharray: 1379; //method getTotalLength()
     stroke-dashoffset: 1379px;
@@ -111,6 +112,8 @@
 .category__path-dot {
   opacity: 0;
   animation-fill-mode: forwards;
+  stroke: #85585E;
+  fill: #85585E;
   @include transition-03;
   &.is-visible {
     opacity: 1;
@@ -123,12 +126,21 @@
   margin-bottom: 12px;
   img {
     width: 100%;
-    filter: contrast(0);
+    //filter: contrast(0);
     @include transition-04;
 
-    @include when-inside('.category-item.is-animated') {
-      filter: contrast(1);
-    }
+    //@include when-inside('.category-item.is-animated') {
+    //  filter: contrast(1);
+    //}
+    //@include when-inside('.category-item.is-animated .category-heading--green') {
+    //  filter: contrast(1) hue-rotate(260deg);
+    //}
+    //@include when-inside('.category-item.is-animated .category-heading--purple') {
+    //  filter: contrast(1) hue-rotate(80deg);
+    //}
+    //@include when-inside('.category-item.is-animated .category-heading--orange') {
+    //  filter: contrast(1) hue-rotate(314deg) saturate(0.7);
+    //}
   }
 
   @include when-inside('.category-heading--orange') {
@@ -169,23 +181,23 @@
 
   h2 {
     margin-bottom: 5px;
-    color: #808080;
+    color: #85585E;
     @include transition-04;
   }
 
   @include when-inside('.category-item.is-animated .category-heading--orange') {
     h2 {
-      color: #eea218;
+      color: #85585E;
     }
   }
   @include when-inside('.category-item.is-animated .category-heading--purple') {
     h2 {
-      color: #8e61a6;
+      color: #85585E;
     }
   }
   @include when-inside('.category-item.is-animated .category-heading--green') {
     h2 {
-      color: #57843d;
+      color: #85585E;
     }
   }
 

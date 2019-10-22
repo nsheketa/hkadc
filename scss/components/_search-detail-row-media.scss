@@ -1,11 +1,11 @@
 //MEDIA
-.search-detail__row-media{
+.search-detail__row-media {
   margin-bottom: 31px;
 
 }
 
-.search-detail__media-main{
-  background: url("#{$imgUrl}event-search/poster.png")no-repeat center /100% 100%;
+.search-detail__media-main {
+  background: url("#{$imgUrl}event-search/poster.png") no-repeat center /100% 100%;
   padding: 5px 10px;
   position: relative;
   top: -64px;
@@ -13,50 +13,52 @@
   margin-left: auto;
   width: 240px;
   height: 306px;
-  img{
+  img {
     position: relative;
     left: 4px;
     width: 100%;
     z-index: 1;
   }
-  figcaption{
-    position: absolute;
-    right: 10px;
-    top: 100%;
+  figcaption {
     margin-top: 10px;
     font-size: 0.79rem; //11px
     color: #77777e;
+    text-align: right;
   }
 
-  @include respond-max(1280){
+  @include respond-max(1280) {
+    //width: 190px;
+    //height: 237px;
+  }
+  @include respond-max(1024) {
     width: 190px;
     height: 237px;
   }
-  @include respond-max(768){
+  @include respond-max(768) {
     top: 0px;
     margin-bottom: 55px;
     margin-left: 0;
     width: 140px;
     height: 170px;
-    figcaption{
+    figcaption {
       right: auto;
       left: 0px;
-      min-width: 140px;
+      //min-width: 140px;
     }
   }
 }
 
-.search-detail__content-media{
+.search-detail__content-media {
   display: flex;
   position: relative;
   //padding-top: 19px;
   margin-bottom: 31px;
 }
 
-.search-detail__media-item{
+.search-detail__media-item {
   max-width: 60px;
   margin-right: 34px;
-  img{
+  img {
     width: 100%;
     box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.16);
   }

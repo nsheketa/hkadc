@@ -32,7 +32,7 @@
   &:before, &:after{
     content: '';
     display: block;
-    background-color: #93dd67;
+    background-color: #d18500;
   }
   &:before{
     @include square(6px);
@@ -79,7 +79,7 @@
   min-width: 100px;
   padding-right: 15px;
   h4{
-    color: #449813;
+    color: #d18500;
   }
 }
 
@@ -91,7 +91,7 @@
 }
 
 .organization-detail__media-main{
-  background: url("#{$imgUrl}organization-search/bg.png")no-repeat center /100% 100%;
+  background: url("#{$imgUrl}general/img-bg-wide.png")no-repeat center /100% 100%;
   top: 0;
   margin-bottom: 35px;
   margin-left: 0;
@@ -121,9 +121,9 @@
 }
 
 .organization-detail__aside-content{
-  border-color: #93dd67;
+  border-color: #d18500;
   &:before{
-    background-color: #93dd67;
+    background-color: #d18500;
   }
 
   span{

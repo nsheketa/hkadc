@@ -1,33 +1,3 @@
-.event__search-block{
-  background-color: #f2b54b;
-  border: 5px solid #eea82f;
-  &:before{
-    border-bottom: 5px solid #eea82f;
-  }
-
-  h2{
-    color: #8b5f14;
-  }
-
-  .search-tags__title{
-    color: #8b5f14;
-    &:before {
-      background-color: #8b5f14;
-    }
-
-    &:after {
-      background-color: #8b5f14;
-    }
-  }
-
-  .search-tag__link{
-    background-color: #d8a244;
-    @include on-event {
-      background-color: rgba(#d8a244, 0.63);
-    }
-  }
-}
-
 .event-search__results-list{
   .search-results__list-img{
     width: 120px;

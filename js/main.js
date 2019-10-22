@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     var controller = new ScrollMagic.Controller();
 
@@ -348,7 +349,22 @@ $(document).ready(function () {
 
     //Event Listing Page
     $('.advanced-search__link').on('click', function (e) {
-        $(this).parents('.search-form__inner').find('.search__advanced').fadeToggle();
+        if($('.search__advanced').hasClass('is-active')){
+            $('.advanced-search__link.less').parent().removeClass('is-hidden');
+            $('.advanced-search__link.less').removeClass('is-hidden');
+            $(this).parents('.search-form__inner').find('.search__advanced').slideToggle().toggleClass('is-active');
+
+            setTimeout(function () {
+                $('.advanced-search__link.more').parent().fadeIn().removeClass('is-hidden');
+                $('.advanced-search__link.more').removeClass('is-hidden');
+            },450)
+        } else{
+            $('.advanced-search__link.less').removeClass('is-hidden');
+            $('.advanced-search__link.less').parent().removeClass('is-hidden');
+            $('.advanced-search__link.more').parent().fadeOut().addClass('is-hidden');
+            $('.advanced-search__link.more').addClass('is-hidden');
+            $(this).parents('.search-form__inner').find('.search__advanced').slideToggle().toggleClass('is-active');
+        }
     });
 
     function selectChange() {

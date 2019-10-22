@@ -1,13 +1,13 @@
 .search-result__list-row{
   display: flex;
-  border-bottom: 1px solid #690000;
+  border-bottom: 1px solid #E19992;
   position: relative;
   &:after {
     content: '';
     display: block;
     border-radius: 50%;
     @include square(12px);
-    background-color: #690000;
+    background-color: #E19992;
     position: absolute;
     right: -6px;
     bottom: -6px;
@@ -28,7 +28,7 @@
       width: 100%;
       max-width: 100%;
       &:first-of-type{
-        border-bottom: 1px solid #690000;
+        border-bottom: 1px solid #df4548;
         &:after{
           display: block;
         }
@@ -40,7 +40,7 @@
 
 .search-results__list-item {
   padding: 17px 164px 17px 0;
-  border-bottom: 1px solid #690000;
+  border-bottom: 1px solid #E19992;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -50,7 +50,7 @@
     display: block;
     border-radius: 50%;
     @include square(12px);
-    background-color: #690000;
+    background-color: #E19992;
     position: absolute;
     right: -6px;
     bottom: -6px;

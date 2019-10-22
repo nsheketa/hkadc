@@ -153,8 +153,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="search__row">
-                                            <button type="button" class="advanced-search__link">進階搜尋</button>
+                                        <div class="search__row advanced-search__link-wrap">
+                                            <button type="button" class="advanced-search__link more">進階搜尋</button>
                                         </div>
                                         <div class="search__advanced">
                                             <div class="search__row">
@@ -204,13 +204,16 @@
                                                     <span class="search__calendar-icon"></span>
                                                 </div>
                                             </div>
+                                            <div class="search__row is-hidden">
+                                                <button type="button" class="advanced-search__link less is-hidden">簡易搜尋</button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="search__submit-wrap">
                                         <button type="submit" class="search__btn">搜尋
                                             <img src="img/general/icon-search.svg" alt="Search Icon">
                                         </button>
-                                        <button type="button" class="search__btn">重設</button>
+                                        <button type="button" class="search-reset__link">重設</button>
                                     </div>
                                 </div>
                             </form>
@@ -243,13 +246,15 @@
                                 <!--</div>-->
                                 <div class="search-tag__list cloudly-tag__list" id="people-tag__list">
                                     <div class="cloudly-tags">
-                                        <a href="#" class="search-tag__link">關鍵字 關鍵字</a>
-                                        <a href="#" class="search-tag__link">Test</a>
-                                        <a href="#" class="search-tag__link">Tag</a>
-                                        <a href="#" class="search-tag__link">Tag 01</a>
-                                        <a href="#" class="search-tag__link">Tag 999</a>
-                                        <a href="#" class="search-tag__link">Two tags</a>
-                                        <a href="#" class="search-tag__link">關鍵字</a>
+                                        <a href="#" class="search-tag__link">折子戲</a>
+                                        <a href="#" class="search-tag__link">古典音樂</a>
+                                        <a href="#" class="search-tag__link">芭蕾舞</a>
+                                        <a href="#" class="search-tag__link">中國舞</a>
+                                        <a href="#" class="search-tag__link">爵士</a>
+                                        <a href="#" class="search-tag__link">黑暗中對話</a>
+                                        <a href="#" class="search-tag__link">白雪公主</a>
+                                        <a href="#" class="search-tag__link">小王子</a>
+                                        <a href="#" class="search-tag__link">音樂劇</a>
                                     </div>
                                 </div>
                             </div>
@@ -289,7 +294,7 @@
                     <div class="search-results__list event-search__results-list">
                         <div class="search-results__list-item fade-in">
                             <a href="#" class="search-results__list-img">
-                                <img src="img/event-listing/item-01.png" alt="">
+                                <img src="img/general/poster.png" alt="">
                             </a>
                             <div class="search-results__list-content">
                                 <h3 class="search-results__list-title">
@@ -301,7 +306,7 @@
                         </div>
                         <div class="search-results__list-item fade-in">
                             <a href="#" class="search-results__list-img">
-                                <img src="img/event-listing/item-02.png" alt="">
+                                <img src="img/general/poster-02.png" alt="">
                             </a>
                             <div class="search-results__list-content">
                                 <h3 class="search-results__list-title">
@@ -313,7 +318,7 @@
                         </div>
                         <div class="search-results__list-item fade-in">
                             <a href="#" class="search-results__list-img">
-                                <img src="img/event-listing/item-03.png" alt="">
+                                <img src="img/general/poster-03.png" alt="">
                             </a>
                             <div class="search-results__list-content">
                                 <h3 class="search-results__list-title">
@@ -325,7 +330,7 @@
                         </div>
                         <div class="search-results__list-item fade-in">
                             <a href="#" class="search-results__list-img">
-                                <img src="img/general/poster.png" alt="">
+                                <img src="img/general/poster-04.png" alt="">
                             </a>
                             <div class="search-results__list-content">
                                 <h3 class="search-results__list-title">
@@ -337,7 +342,7 @@
                         </div>
                         <div class="search-results__list-item fade-in">
                             <a href="#" class="search-results__list-img">
-                                <img src="img/event-listing/item-01.png" alt="">
+                                <img src="img/general/poster-05.png" alt="">
                             </a>
                             <div class="search-results__list-content">
                                 <h3 class="search-results__list-title">
@@ -568,16 +573,4 @@
     });
 </script>
 
-<script>
-    $(document).ready(function (){
-        // https://derekhilldesign.com/projects/cloudly/
-
-        // $("#people-tag__list").cloudly({
-        //     tagMin: 16,
-        //     tagMax: 16,
-        //     impColor: 'white',
-        //     tagColor: 'white'
-        // });
-    });
-</script>
 </html>
